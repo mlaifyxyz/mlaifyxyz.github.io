@@ -22,6 +22,34 @@ side: About, Writing, and the privacy and security pages.
 - **Hosting:** Cloudflare Workers static assets (Worker `matthewd-org`)
 - **DNS / CDN:** Cloudflare
 - **Comments:** Giscus (GitHub Discussions)
+- **Fonts:** system serif / sans-serif stacks only, no web fonts
+
+### Design
+
+matthewd.org and mlaify.io share one palette (copper accent, warm "ink" neutrals) but
+not one layout. matthewd.org is a **personal writing** design: a single narrow column
+(`container-column`), serif reading text (`prose-writing`), small-caps kickers, a ❦
+ornament rule, and a by-year post index (`layouts/_partials/post-index.html`).
+mlaify.io keeps the wide, card-based **project** layout. Keep it that way when porting
+changes between the two repos.
+
+### Policies and contacts
+
+| | Repository | On the site |
+|---|---|---|
+| Security policy | [`SECURITY.md`](SECURITY.md) | `/security/`, `/.well-known/security.txt` |
+| Privacy policy and terms | — | `/privacy-policy/`, `/privacy.json` |
+| Code of conduct | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | `/code-of-conduct/` |
+| Contributing | [`CONTRIBUTING.md`](CONTRIBUTING.md) | `/contributing/` |
+| Licenses | [`LICENSE`](LICENSE) (MIT), [`CONTENT_LICENSE.md`](CONTENT_LICENSE.md) (CC BY-NC-SA 4.0) | `/license/` |
+| humans.txt | — | `/humans.txt` |
+
+Contacts: **security@mlaify.io** (security reports and code of conduct reports;
+PGP key `static/publickey.security.mlaify.io-…asc`, fingerprint
+`3864 2D27 5F82 0A02 6F3B FC5E 7E44 D7D0 5BAF D4DF`) and **privacy@mlaify.io**.
+No matthewd.org addresses are used. The repository files and the site pages carry the
+same text in two places; update both together. `security.txt` expires
+2027-05-09; renew it before then.
 
 ---
 

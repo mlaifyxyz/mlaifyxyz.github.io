@@ -24,8 +24,8 @@ For security issues, do not open a PR — see SECURITY.md.
 
 - [ ] I have read the [Contributing Guide](../CONTRIBUTING.md) and agree to the [Code of Conduct](../CODE_OF_CONDUCT.md).
 - [ ] I have added an entry under `[Unreleased]` in `CHANGELOG.md` for any user-facing change.
-- [ ] I have built the site locally (`hugo server`) and verified there are no rendering or link issues.
-- [ ] I have not introduced trackers, third-party analytics, or non-essential external resources.
+- [ ] I have built the site locally (`npm run build:cf`, or `npm run dev` to browse) and verified there are no rendering or link issues.
+- [ ] I have not introduced trackers, analytics, web fonts, or other third-party resources.
 - [ ] My changes generate no new warnings or build errors.
 
 ## Screenshots / Notes

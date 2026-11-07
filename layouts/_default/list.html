@@ -1,30 +1,29 @@
 {{ define "main" }}
-<section class="container-page py-12 lg:py-16">
-  {{ partial "breadcrumbs.html" . }}
-  <header class="mb-10 max-w-3xl">
-    <h1 class="text-balance text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl dark:text-white">{{ .Title }}</h1>
-    {{ with .Params.lead | default .Description }}
-      <p class="mt-4 text-lg text-ink-600 dark:text-ink-300">{{ . }}</p>
-    {{ end }}
+<section class="container-column py-14 sm:py-16">
+  <header>
+    {{- with .Params.kicker }}<p class="kicker">{{ . }}</p>{{ end }}
+    <h1 class="page-title{{ with .Params.kicker }} mt-3{{ end }}">{{ .Title }}</h1>
+    {{- with .Params.lead | default .Description }}
+      <p class="page-lead">{{ . }}</p>
+    {{- end }}
   </header>
 
-  {{ if .Content }}
-    <div class="prose-mlaify mb-12">{{ .Content }}</div>
-  {{ end }}
+  {{- if .Content }}
+    <div class="prose-writing mt-10">{{ .Content }}</div>
+  {{- end }}
 
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="card card-hover group">
-        <h2 class="text-lg font-semibold text-ink-900 group-hover:accent-text dark:text-white">{{ .Title }}</h2>
-        {{ with .Description | default .Summary }}
-          <p class="mt-2 text-sm text-ink-600 dark:text-ink-400">{{ . }}</p>
-        {{ end }}
-        <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium accent-text">
-          Read more
-          {{ partial "svg-icon.html" (dict "name" "arrow-right" "class" "h-4 w-4") }}
-        </span>
-      </a>
-    {{ end }}
-  </div>
+  {{- with .RegularPages }}
+    <div class="ornament" aria-hidden="true">❦</div>
+    {{ partial "post-index.html" . }}
+  {{- end }}
+
+  {{- /* Taxonomy list (e.g. /tags/): one link per term. */ -}}
+  {{- if eq .Kind "taxonomy" }}
+    <ul class="mt-10 flex flex-wrap gap-2 text-sm">
+      {{- range .Data.Terms.Alphabetical }}
+        <li><a class="rounded-full border border-ink-200 px-3 py-1 hover:border-copper-300 hover:text-copper-700 dark:border-ink-800 dark:hover:border-copper-700 dark:hover:text-copper-400" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <span class="text-ink-400">{{ .Count }}</span></a></li>
+      {{- end }}
+    </ul>
+  {{- end }}
 </section>
 {{ end }}

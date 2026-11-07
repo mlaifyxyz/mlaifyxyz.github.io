@@ -20,6 +20,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   link to mlaify.io instead; About links to mlaify.io for AttackMap and the build principles.
 - Homepage About button points at `/about/` (was the `/me/` alias).
 - Domain references in config, privacy, security, humans.txt and privacy.json updated to matthewd.org.
+- Personal writing design, distinct from mlaify.io's project layout on the same palette: narrow serif
+  reading column, wordmark header, small-caps kickers, ❦ ornament, by-year post index on the homepage and
+  `/writing/`, centered post headers, and a single-column layout for pages (no sidebar or breadcrumbs).
+- Serif and sans text use system font stacks; the Inter stylesheet from rsms.me is no longer loaded.
+- Fixed: the theme toggle stored `mlaify-theme` while the early script read `matthewd-theme`, so a chosen
+  theme could flash wrong on reload. Both now use `matthewd-theme`.
+- New pages: `/contributing/`, `/code-of-conduct/`, `/license/`. Footer links all policy pages.
+- Contacts are security@mlaify.io and privacy@mlaify.io (no matthewd.org addresses). The security@mlaify.io
+  PGP key is served at `/publickey.security.mlaify.io-38642d….asc`; `matthewdxyz.asc` removed.
+- `/security/`, `/privacy-policy/` (now "Privacy Policy and Terms of Use"; the code of conduct moved to its
+  own page), `humans.txt`, `privacy.json`, `CONTRIBUTING.md`, `CONTENT_LICENSE.md` and `LICENSE` updated for
+  matthewd.org. `check-build.sh` also checks the key, humans.txt, privacy.json and the policy pages.
 
 ### Added
 - New theme foundation: Tailwind CSS 3, Pagefind 1.4 search, JetBrains Mono + Inter fonts.

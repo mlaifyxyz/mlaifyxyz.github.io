@@ -1,0 +1,22 @@
+{{- /* Journal-style index: posts grouped by year, title and date on one line.
+       Pass a Pages collection as the context. */ -}}
+{{- range .GroupByDate "2006" }}
+  <section class="mt-10 first:mt-0">
+    <h3 class="post-index-year">{{ .Key }}</h3>
+    <ul class="mt-3 divide-y divide-ink-200/70 dark:divide-ink-800/70">
+      {{- range .Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="group block py-4">
+            <div class="flex items-baseline justify-between gap-6">
+              <span class="font-serif text-xl text-ink-900 group-hover:text-copper-700 dark:text-white dark:group-hover:text-copper-400">{{ .Title }}</span>
+              <time class="shrink-0 font-sans text-xs uppercase tracking-wider text-ink-500 dark:text-ink-400" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+            </div>
+            {{- with .Params.description }}
+              <p class="mt-1 text-sm text-ink-600 dark:text-ink-400">{{ . }}</p>
+            {{- end }}
+          </a>
+        </li>
+      {{- end }}
+    </ul>
+  </section>
+{{- end }}
