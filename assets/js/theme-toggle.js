@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "mlaify-theme";
+  const STORAGE_KEY = "matthewd-theme";
   const root = document.documentElement;
 
   function apply(theme) {

@@ -1,13 +1,17 @@
 {
-  "version": "1.0",
-  "last_updated": "2025-01-01",
+  "version": "1.1",
+  "last_updated": "2026-11-07",
   "operator": "Matt D.",
   "site": "https://matthewd.xyz",
+  "also_served_at": ["https://matthewd.org"],
+  "policy": "https://matthewd.xyz/privacy-policy/",
   "data_collection": {
     "personal_data_sold": false,
     "advertising_tracking": false,
     "behavioral_profiling": false,
+    "analytics": false,
     "cookies_first_party": false,
+    "local_storage": ["matthewd-theme (light/dark preference, stays on the device)"],
     "technical_data_processed": true,
     "purpose": [
       "security",
@@ -17,12 +21,13 @@
   },
   "third_parties": [
     {
-      "name": "Content delivery and infrastructure providers",
-      "purpose": "Content delivery, security, and reliability"
+      "name": "Cloudflare",
+      "purpose": "Hosting, content delivery, security, and reliability",
+      "policy": "https://www.cloudflare.com/privacypolicy/"
     },
     {
       "name": "GitHub",
-      "purpose": "Hosting, comments, discussions, and repository interaction",
+      "purpose": "Source hosting, comments (Giscus / GitHub Discussions), and repository interaction",
       "policy": "https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
     }
   ],
@@ -32,7 +37,8 @@
     "Texas TDPSA"
   ],
   "contact": {
-    "email": "privacy@matthewd.xyz",
-    "github": "https://github.com/mdavistffhrtporg"
+    "email": "privacy@mlaify.io",
+    "security": "security@mlaify.io",
+    "github": "https://github.com/mlaifyxyz/mlaifyxyz.github.io"
   }
 }

@@ -1,16 +1,16 @@
 # Content License
 
-All original written content and original media in this repository, including
-but not limited to:
+All original written content and original media in this repository and on
+https://matthewd.xyz, including but not limited to:
 
 - Blog posts
-- Essays and articles
+- Essays, articles, and poems
 - Pages
-- Images and graphics (unless otherwise noted)
+- Original photographs, images, and graphics (unless otherwise noted)
 
 are licensed under the following license:
 
-**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International  
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 (CC BY-NC-SA 4.0)**
 
 https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -26,4 +26,13 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 - **ShareAlike** — If you remix, transform, or build upon the material, you
   must distribute your contributions under the same license.
 
-© 2025 Matt D.. All rights reserved except where licensed above.
+## Third-party material
+
+Images credited to someone else (for example, Unsplash photos named in a
+post's caption), quotations, and linked material are not covered by this
+license and remain under their owners' terms.
+
+Code and configuration are licensed separately under the MIT License; see
+[LICENSE](LICENSE). A summary of both is at https://matthewd.xyz/license/.
+
+© 2025-2026 Matt D. All rights reserved except where licensed above.

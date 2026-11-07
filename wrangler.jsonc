@@ -1,0 +1,52 @@
+{
+    // matthewd.xyz — Hugo + Pagefind, served as Workers static assets.
+    //
+    // Same pattern as mlaify.io (mlaify/mlaify.github.io): no `main` and no Worker
+    // script, so requests are served entirely by Cloudflare's asset worker — no
+    // Worker invocation, no per-request cost. Add `main` only if this site ever
+    // needs server-side logic.
+    //
+    // Deployed only by .github/workflows/deploy.yml after the operator approves the
+    // `production` environment. See README.md "Deploy".
+    "name": "matthewd-xyz",
+    "compatibility_date": "2026-07-28",
+
+    "assets": {
+        "directory": "./public",
+
+        // Hugo emits public/<path>/index.html, so /writing must redirect to /writing/.
+        "html_handling": "auto-trailing-slash",
+
+        // Serve Hugo's public/404.html with a real 404 status. Must NOT be
+        // "single-page-application" — that would return 200 for every missing path.
+        "not_found_handling": "404-page"
+    },
+
+    // Apex custom domains only. matthewd.xyz is primary (Hugo baseURL, canonical
+    // links); matthewd.org serves the same site directly, not as a redirect.
+    // `wrangler deploy` replaces any domains attached in the dashboard, so every
+    // hostname this Worker serves must be listed here. A hostname can be attached
+    // to only one Worker: matthewd.xyz must first be removed from the mlaify-io
+    // Worker (mlaify/mlaify.github.io) and that deploy approved, before this
+    // Worker's first deploy. `www` is intentionally absent: it should 301 to the
+    // apex with a Cloudflare Redirect Rule, not be another custom domain.
+    "routes": [
+        {
+            "pattern": "matthewd.xyz",
+            "custom_domain": true
+        },
+        {
+            "pattern": "matthewd.org",
+            "custom_domain": true
+        }
+    ],
+
+    // Reachable only at its custom domain: no <name>.workers.dev duplicate for
+    // crawlers, and no public preview URLs.
+    "workers_dev": false,
+    "preview_urls": false,
+
+    "observability": {
+        "enabled": true
+    }
+}

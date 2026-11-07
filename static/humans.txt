@@ -1,19 +1,23 @@
 /* TEAM */
 Owner / Author: Matt D.
-Contact: privacy@matthewd.xyz
-GitHub: https://github.com/mdavistffhrtporg
+Contact: privacy@mlaify.io
+Security: security@mlaify.io
+GitHub: https://github.com/mlaifyxyz/mlaifyxyz.github.io
+Projects: https://mlaify.io
 Location: United States
 
 /* SITE */
-Domain: matthewd.xyz
+Domain: matthewd.xyz (also served at matthewd.org)
 Purpose: Personal website and writing
-Stack: Hugo, GitHub Pages, Cloudflare
+Stack: Hugo, Pagefind, Cloudflare Workers static assets
+Typography: system serif and sans-serif fonts (no web fonts)
 Comments: GitHub Discussions (Giscus)
-Analytics: Minimal, security-focused only
+Analytics: None
 
 /* CONTENT */
-Writing, technical notes, and personal pages.
+Essays, technical notes, poems, and personal pages.
 Opinions are my own.
+License: CC BY-NC-SA 4.0 (writing and original media), MIT (code)
 
 /* PRINCIPLES */
 Privacy-respecting by design
@@ -28,5 +32,5 @@ Security researchers
 Thoughtful readers
 
 /* META */
-Last updated: 2025-12-27
+Last updated: 2026-11-07
 Standards: humans.txt (humanstxt.org)

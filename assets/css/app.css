@@ -38,8 +38,10 @@
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
+  /* matthewd.xyz reads like paper: warm off-white in light mode, same ink
+     and copper palette as mlaify.io. */
   body {
-    @apply bg-white text-ink-800 dark:bg-ink-950 dark:text-ink-200;
+    @apply bg-ink-50 text-ink-800 dark:bg-ink-950 dark:text-ink-200;
     @apply font-sans;
   }
 
@@ -168,6 +170,62 @@
   }
   .dark .bg-grid {
     background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.06) 1px, transparent 0);
+  }
+}
+
+/* ------------------------------------------------------------------
+   matthewd.xyz — personal writing design.
+   One narrow reading column, serif text, small-caps kickers and an
+   ornamental rule. mlaify.io keeps the wide, card-based project layout.
+   ------------------------------------------------------------------ */
+@layer components {
+  .container-column {
+    @apply mx-auto w-full max-w-column px-4 sm:px-6;
+  }
+
+  .wordmark {
+    @apply font-serif text-xl font-semibold tracking-tight text-ink-900 dark:text-white;
+  }
+
+  .kicker {
+    @apply font-sans text-xs font-medium uppercase tracking-[0.18em] text-copper-700 dark:text-copper-400;
+  }
+
+  .page-title {
+    @apply text-balance font-serif text-4xl font-semibold leading-tight tracking-tight text-ink-900 sm:text-5xl dark:text-white;
+  }
+
+  .page-lead {
+    @apply mt-4 font-serif text-xl italic leading-relaxed text-ink-600 dark:text-ink-300;
+  }
+
+  .text-link {
+    @apply text-copper-700 underline decoration-copper-300 decoration-1 underline-offset-4 hover:decoration-copper-700;
+    @apply dark:text-copper-400 dark:decoration-copper-800 dark:hover:decoration-copper-400;
+  }
+
+  .prose-writing {
+    @apply prose prose-stone max-w-none font-serif dark:prose-invert;
+    @apply prose-headings:scroll-mt-24 prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight;
+    @apply prose-a:text-copper-700 prose-a:decoration-copper-300 prose-a:underline-offset-4 dark:prose-a:text-copper-400 dark:prose-a:decoration-copper-800;
+    @apply prose-blockquote:border-copper-300 prose-blockquote:font-normal prose-blockquote:italic dark:prose-blockquote:border-copper-800;
+    @apply prose-code:font-mono prose-code:before:content-none prose-code:after:content-none;
+    @apply prose-pre:rounded-lg prose-pre:bg-ink-900 prose-pre:font-mono prose-pre:text-ink-100;
+    @apply prose-img:rounded-md prose-figcaption:text-center prose-figcaption:font-sans;
+  }
+
+  /* Centered fleuron between two hairlines. */
+  .ornament {
+    @apply my-12 flex items-center gap-4 text-copper-600 dark:text-copper-400;
+  }
+  .ornament::before,
+  .ornament::after {
+    content: "";
+    @apply h-px flex-1 bg-ink-200 dark:bg-ink-800;
+  }
+
+  .post-index-year {
+    @apply font-serif text-2xl italic text-ink-400 dark:text-ink-500;
   }
 }
 

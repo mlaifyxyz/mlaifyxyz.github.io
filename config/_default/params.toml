@@ -1,5 +1,7 @@
 description = "Matt D. — open source contributor and writer."
 tagline = "Open source contributor and writer."
+# Homepage intro (personal site). Edit freely.
+intro = "I'm Matt — a Fedora Magazine contributor and editor, and an open source contributor since 2003. This is where I keep my personal writing: essays, technical notes, and the occasional poem."
 
 # Default OG / Twitter image
 ogImage = "images/pic-mdavis-home.svg"
@@ -7,7 +9,7 @@ twitterHandle = ""
 
 # Repo / org links
 githubOrg = "https://github.com/mdavistffhrtporg"
-siteRepo = "https://github.com/mdavistffhrtporg/mdavistffhrtporg.github.io"
+siteRepo = "https://github.com/mlaifyxyz/mlaifyxyz.github.io"
 
 # Footer toggles
 showBuildInfo = false
@@ -22,15 +24,5 @@ showBuildInfo = false
     "https://github.com/mdavistffhrtporg",
     "https://gitlab.com/matthewdxyz",
     "https://bsky.app/profile/matthewd.xyz",
+    "https://mlaify.io/",
   ]
-
-# Per-project params used by the /projects/ hub and homepage projects section.
-[products]
-  [products.attackmap]
-    name = "AttackMap"
-    tagline = "Local-first defensive security analysis for real codebases."
-    status = "beta"
-    accent = "attackmap"
-    url = "/attackmap/"
-    repoUrl = "https://github.com/mlaify/attackmap"
-    weight = 20

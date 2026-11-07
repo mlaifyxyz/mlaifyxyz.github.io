@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       maxWidth: {
         content: "72rem",
+        column: "44rem",
         prose: "70ch",
       },
       fontFamily: {
@@ -38,6 +39,21 @@ module.exports = {
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
+        ],
+        // Reading face for matthewd.xyz: system serifs only, so no font is
+        // downloaded from a third party (Old Style stack, modernfontstacks.com).
+        serif: [
+          "Iowan Old Style",
+          "Palatino Linotype",
+          "Palatino",
+          "URW Palladio L",
+          "P052",
+          "Charter",
+          "Bitstream Charter",
+          "Sitka Text",
+          "Cambria",
+          "Georgia",
+          "serif",
         ],
       },
       colors: {

@@ -1,8 +1,8 @@
 {
   "name": "mdavistffhrtporg.github.io",
   "version": "0.3.0",
-  "description": "matthewd.xyz — personal site, writing, and projects (Aegis, AttackMap, et al).",
-  "author": "Matt D. <matthewd@matthewd.xyz>",
+  "description": "matthewd.xyz — Matt D.'s personal site and writing.",
+  "author": "Matt D. (https://matthewd.xyz)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,9 +12,12 @@
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "build": "hugo --minify --gc && pagefind --site public",
+    "build:cf": "npm ci && hugo --gc --minify && npx pagefind --site public && bash scripts/check-build.sh",
     "build:hugo": "hugo --minify --gc",
     "build:search": "pagefind --site public",
-    "format": "prettier **/** -w -c"
+    "format": "prettier **/** -w -c",
+    "deploy": "npx --yes wrangler@4.156.0 deploy",
+    "preview": "npx --yes wrangler@4.156.0 dev"
   },
   "dependencies": {
     "@tabler/icons": "^3.36.1",

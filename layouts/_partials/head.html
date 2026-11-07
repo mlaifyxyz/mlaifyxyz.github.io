@@ -9,8 +9,8 @@
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0c0a09" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
 
 <title>{{ $pageTitle }}</title>
 <meta name="description" content="{{ $description }}" />
@@ -41,9 +41,7 @@
 <!-- humans.txt -->
 <link rel="author" href="/humans.txt" />
 
-<!-- Self-hosted system fonts; native UI fallback if not provided. -->
-<link rel="preconnect" href="https://rsms.me/" crossorigin />
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<!-- No web fonts: system serif for reading, system sans for UI. Nothing is fetched from a font host. -->
 
 {{- $css := resources.Get "css/app.css" | postCSS (dict "config" "./postcss.config.js") -}}
 {{- if hugo.IsProduction -}}

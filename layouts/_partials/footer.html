@@ -1,26 +1,26 @@
-<footer class="mt-24 border-t border-ink-200/60 dark:border-ink-800/60">
-  <div class="container-page py-10">
-    <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-      <div class="max-w-md text-sm text-ink-600 dark:text-ink-400">
-        © {{ now.Year }} Matt D. ·
-        Content licensed
-        <a class="underline hover:text-copper-700" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> ·
-        Code licensed
-        <a class="underline hover:text-copper-700" href="https://opensource.org/licenses/MIT">MIT</a>
-      </div>
-      <nav class="text-sm" aria-label="Footer">
-        <ul class="grid grid-cols-2 gap-x-8 gap-y-2 md:grid-cols-3">
-          {{ range site.Menus.footer }}
-            <li><a class="hover:text-copper-700 dark:hover:text-copper-400" href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
-    </div>
-    <p class="mt-8 text-xs text-ink-500 dark:text-ink-400">
-      Hosted on
-      <a class="underline" href="https://pages.github.com/">GitHub Pages</a>.
-      <a class="underline" href="/humans.txt">humans.txt</a> ·
-      <a class="underline" href="/.well-known/security.txt">security.txt</a>
+<footer class="mt-24 border-t border-ink-200/70 dark:border-ink-800/70">
+  <div class="container-column py-12 text-sm text-ink-600 dark:text-ink-400">
+    <p class="font-serif text-base italic text-ink-700 dark:text-ink-300">
+      Personal writing by Matt D. Projects live at
+      <a class="text-link not-italic" href="https://mlaify.io/">mlaify.io</a>.
+    </p>
+
+    <nav class="mt-6" aria-label="Footer">
+      <ul class="flex flex-wrap gap-x-5 gap-y-2">
+        {{ range site.Menus.footer }}
+          <li><a class="hover:text-copper-700 dark:hover:text-copper-400" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <p class="mt-6 text-xs text-ink-500 dark:text-ink-400">
+      © {{ now.Year }} Matt D. Writing and original media
+      <a class="underline hover:text-copper-700" href="/license/">CC BY-NC-SA 4.0</a>;
+      code <a class="underline hover:text-copper-700" href="/license/">MIT</a>.
+      Served by Cloudflare ·
+      <a class="underline hover:text-copper-700" href="/index.xml">RSS</a> ·
+      <a class="underline hover:text-copper-700" href="/humans.txt">humans.txt</a> ·
+      <a class="underline hover:text-copper-700" href="/.well-known/security.txt">security.txt</a>
     </p>
   </div>
 </footer>

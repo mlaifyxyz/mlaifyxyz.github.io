@@ -1,15 +1,19 @@
-# Matt D. security contacts and policy
+# matthewd.xyz security contacts and policy
 
-# Our security contact channels
-Contact: mailto:security@matthewd.xyz
+# Our security contact channel
 Contact: mailto:security@mlaify.io
 
 # If practical, use PGP encryption
-Encryption: https://raw.githubusercontent.com/mdavistffhrtporg/mdavistffhrtporg.github.io/refs/heads/main/static/matthewdxyz.asc
+Encryption: https://matthewd.xyz/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc
 
 # Link to our vulnerability disclosure policy
-Policy: https://github.com/mdavistffhrtporg/mdavistffhrtporg.github.io/blob/main/SECURITY.md
-# Languages that our team speaks and understands
+Policy: https://matthewd.xyz/security/
+
+# The canonical locations of this file (the same site is served at both)
+Canonical: https://matthewd.xyz/.well-known/security.txt
+Canonical: https://matthewd.org/.well-known/security.txt
+
+# Languages that we speak and understand
 Preferred-Languages: en-US
 
 # Expiration date for this security.txt file

@@ -1,26 +1,21 @@
 ---
-title: "Privacy Policy, Terms of Use, and Code of Conduct"
-
-description: "Privacy Policy, Terms of Use, and Code of Conduct"
+title: "Privacy Policy and Terms of Use"
+kicker: "Policy"
+description: "What this site processes, who else is involved, and the terms for using it."
+lastmod: 2026-11-07
 aliases:
   - /privacy/
 cascade:
   comments: false
 ---
 
-# Privacy Policy, Terms of Use, and Code of Conduct
-
-**Last updated:** 2025-12-27
-
----
-
 ## TL;DR
 
 - This is a personal website.
-- No ads. No selling personal data. No behavioral tracking.
-- Limited technical data may be processed for security and reliability.
-- Comments and participation use GitHub services (via Giscus).
-- Be respectful if you interact. Don’t abuse the site or its community spaces.
+- No ads. No selling personal data. No behavioral tracking. No analytics.
+- No web fonts or scripts are loaded from third-party hosts, except GitHub's Giscus when a post shows comments.
+- Limited technical data is processed by Cloudflare for security and reliability.
+- Comments use GitHub (via Giscus) and follow the [Code of Conduct](/code-of-conduct/).
 
 ---
 
@@ -28,17 +23,17 @@ cascade:
 
 ## Overview
 
-This website (`matthewd.xyz`) is a personal website operated by Matt D..
+This website (`matthewd.xyz`, also served at `matthewd.org`) is the personal website of Matt D.
 
 The site is designed to be simple, secure, and respectful of visitor privacy. It does not sell personal data, does not run advertising networks, and does not engage in behavioral profiling or targeted advertising.
 
-This policy explains what information may be processed when you visit or interact with the site, how it is used, and which third parties may be involved as a result of your participation.
+This policy explains what information may be processed when you visit or interact with the site, how it is used, and which third parties may be involved.
 
 ---
 
 ## Information Processed Automatically
 
-When you access this website, limited technical information may be processed automatically to ensure secure and reliable operation. This may include:
+When you access this website, limited technical information may be processed automatically to keep it secure and reliable. This may include:
 
 - IP address
 - HTTP request headers
@@ -54,29 +49,30 @@ This website does **not** use advertising trackers, cross-site profiling, or mar
 
 ---
 
-## Cookies and Similar Technologies
+## Cookies and Local Storage
 
-This website does not set first-party cookies for advertising or cross-site tracking.
+This website does not set cookies.
 
-Third-party services used on the site may set cookies or similar technologies when you interact with their features. These technologies are governed by the privacy policies of the respective third parties.
+If you use the light/dark toggle, your choice is stored in your browser's local storage under the key `matthewd-theme`. It never leaves your device.
+
+Third-party services used on the site may set cookies or similar technologies when you interact with their features. These are governed by the privacy policies of those third parties.
 
 ---
 
 ## Third-Party Services
 
-This website relies on a small number of third-party platforms to operate and provide optional features. Interaction with these services occurs only when you choose to use them.
+### Hosting, Content Delivery, and Security (Cloudflare)
 
-### Content Delivery, Security, and Reliability
+This website is served by **Cloudflare** as a static site on Cloudflare Workers. As part of serving and protecting the site, Cloudflare processes limited technical request data (such as IP addresses and request metadata) under its own privacy and security practices.
 
-This website uses third-party infrastructure and content delivery services to serve content efficiently, improve performance, and protect against abuse and malicious activity.
-
-As part of providing these services, limited technical request data (such as IP addresses and request metadata) may be processed in accordance with the service providers’ privacy and security practices.
+Cloudflare Privacy Policy:
+https://www.cloudflare.com/privacypolicy/
 
 ---
 
 ### Comments and Discussions (GitHub / Giscus)
 
-Comments on this website are provided via **GitHub Discussions** using the **Giscus** commenting system.
+Comments on posts are provided via **GitHub Discussions** using the **Giscus** commenting system. On pages that show comments, the Giscus widget is loaded from giscus.app.
 
 If you choose to comment or participate:
 - You interact directly with GitHub services
@@ -85,22 +81,22 @@ If you choose to comment or participate:
 
 Participation in comments is optional.
 
-GitHub Privacy Statement:  
+GitHub Privacy Statement:
 https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement
 
 ---
 
 ### GitHub and Repository Interaction
 
-This website is built, hosted, and maintained using GitHub infrastructure.
+This website's source is maintained on GitHub at [mlaifyxyz/mlaifyxyz.github.io](https://github.com/mlaifyxyz/mlaifyxyz.github.io) and deployed to Cloudflare from there.
 
-If you visit linked repositories, open issues, submit pull requests, or participate in discussions, those interactions are governed by GitHub’s Terms of Service and Privacy Statement.
+If you visit linked repositories, open issues, submit pull requests, or participate in discussions, those interactions are governed by GitHub's Terms of Service and Privacy Statement.
 
 ---
 
 ## Embedded and External Content
 
-Pages on this website may include embedded content or links to external websites. Embedded content behaves as if you visited the external site directly and may collect data or use cookies according to that site’s policies.
+Pages on this website may include embedded content or links to external websites. Embedded content behaves as if you visited the external site directly and may collect data or use cookies according to that site's policies.
 
 This website has no control over the data practices of external sites.
 
@@ -110,7 +106,7 @@ This website has no control over the data practices of external sites.
 
 This website does not maintain user accounts or personal profiles.
 
-Technical data processed for security and operational purposes is retained only as long as necessary to fulfill those purposes, in accordance with the policies of the relevant service providers.
+Technical data processed for security and operational purposes is retained only as long as necessary for those purposes, in accordance with the policies of the relevant service providers.
 
 Comments and discussion content are retained by the third-party platforms that host them.
 
@@ -156,16 +152,18 @@ This website processes only limited technical data necessary for secure operatio
 
 ## Exercising Your Rights
 
-You may contact the site operator regarding privacy-related requests:
+You may contact the site operator about privacy-related requests:
 
-- **Email:** privacy@matthewd.xyz  
-- **GitHub:** By opening an issue in a related GitHub repository
+- **Email:** [privacy@mlaify.io](mailto:privacy@mlaify.io)
+- **GitHub:** by opening an issue in [the site's repository](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues)
 
 Because this site does not maintain user accounts or personal profiles, the ability to identify or act on specific data may be limited.
 
+A machine-readable summary of this policy is at [/privacy.json](/privacy.json).
+
 ---
 
-## Children’s Information
+## Children's Information
 
 This website is not directed at children under the age of 13 and does not knowingly collect personal information from children.
 
@@ -173,7 +171,7 @@ This website is not directed at children under the age of 13 and does not knowin
 
 ## Changes to This Policy
 
-This policy may be updated periodically to reflect changes to the site or applicable laws. The “Last updated” date indicates the most recent revision.
+This policy may be updated periodically to reflect changes to the site or applicable laws. The "Last updated" date shows the most recent revision.
 
 ---
 
@@ -196,6 +194,8 @@ You agree not to:
 - Abuse interactive features or third-party services
 - Misrepresent authorship or ownership of content
 
+Security research is welcome under the [security policy](/security/).
+
 ---
 
 ## Content and Licensing
@@ -204,13 +204,19 @@ Unless otherwise stated:
 - Code and configuration are licensed under the MIT License
 - Written content and original media are licensed under CC BY-NC-SA 4.0
 
-See `LICENSE` and `CONTENT_LICENSE.md` for details.
+Third-party images (for example, Unsplash photos credited in a caption) remain under their own licenses. See the [License](/license/) page for details.
+
+---
+
+## Community Spaces
+
+Comments, issues, and discussions connected to this site follow the [Code of Conduct](/code-of-conduct/).
 
 ---
 
 ## Disclaimer and Limitation of Liability
 
-This website is provided “as is” without warranties of any kind.
+This website is provided "as is" without warranties of any kind.
 
 To the maximum extent permitted by law, the operator shall not be liable for damages arising from use of the website.
 
@@ -219,58 +225,3 @@ To the maximum extent permitted by law, the operator shall not be liable for dam
 ## Governing Law
 
 These terms are governed by applicable laws of the United States.
-
----
-
-# Code of Conduct
-
-This project and its associated spaces follow a Code of Conduct adapted from the **Contributor Covenant v3.0**.
-
----
-
-## Our Pledge
-
-We are committed to providing a welcoming, respectful, and harassment-free experience for everyone who participates in this site or its related community spaces.
-
----
-
-## Expected Behavior
-
-Participants are expected to:
-- Be respectful and considerate
-- Engage in good faith
-- Accept constructive feedback gracefully
-- Respect differing viewpoints and experiences
-
----
-
-## Unacceptable Behavior
-
-Unacceptable behavior includes:
-- Harassment, discrimination, or abusive conduct
-- Trolling, insults, or personal attacks
-- Publishing private or sensitive information without consent
-- Sustained disruption of discussions or community spaces
-
----
-
-## Enforcement
-
-Violations may result in moderation actions, including content removal or participation restrictions.
-
----
-
-## Reporting
-
-Concerns may be reported via:
-- **Email:** security@matthewd.xyz  
-- **GitHub:** By filing an issue or contacting repository maintainers
-
-All reports will be reviewed and handled with discretion.
-
----
-
-## Attribution
-
-This Code of Conduct is adapted from the **Contributor Covenant, version 3.0**:  
-https://www.contributor-covenant.org/version/3/0/code_of_conduct/

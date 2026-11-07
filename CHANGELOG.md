@@ -7,6 +7,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Personal site at matthewd.xyz and matthewd.org (2026-11-07)
+
+- This is the personal site again, at **https://matthewd.xyz** (canonical) and **https://matthewd.org**
+  (same site, served directly, not a redirect). Projects live on mlaify.io.
+- Hosting: Cloudflare Workers static assets (Worker `matthewd-xyz`, `wrangler.jsonc`, both apexes as custom
+  domains), deployed by `.github/workflows/deploy.yml` after the operator approves the `production`
+  environment. PRs build only. matthewd.xyz moves here from the mlaify.io Worker.
+- Added `static/_headers`, `scripts/check-build.sh`, `.nvmrc`, and `build:cf` / `deploy` / `preview` scripts.
+- Removed the GitHub Pages workflow (`hugo.yml`), `CNAME`, `static/CNAME` and `.nojekyll`.
+- Removed the project pages (Aegis, AttackMap, OmekaRapper, OpenSift, OpenContractRx), `/projects/`,
+  `/principles/`, `/contribute/`, the `[products]` params and the homepage projects section. Nav and footer
+  link to mlaify.io instead; About links to mlaify.io for AttackMap and the build principles.
+- Homepage About button points at `/about/` (was the `/me/` alias).
+- Domain references in config, privacy, security, humans.txt and privacy.json name matthewd.xyz, with
+  matthewd.org as the second address; `security.txt` lists a `Canonical:` line for each.
+- Personal writing design, distinct from mlaify.io's project layout on the same palette: narrow serif
+  reading column, wordmark header, small-caps kickers, ❦ ornament, by-year post index on the homepage and
+  `/writing/`, centered post headers, and a single-column layout for pages (no sidebar or breadcrumbs).
+- Serif and sans text use system font stacks; the Inter stylesheet from rsms.me is no longer loaded.
+- Fixed: the theme toggle stored `mlaify-theme` while the early script read `matthewd-theme`, so a chosen
+  theme could flash wrong on reload. Both now use `matthewd-theme`.
+- New pages: `/contributing/`, `/code-of-conduct/`, `/license/`. Footer links all policy pages.
+- Contacts are security@mlaify.io and privacy@mlaify.io (no matthewd.xyz or matthewd.org addresses). The security@mlaify.io
+  PGP key is served at `/publickey.security.mlaify.io-38642d….asc`; `matthewdxyz.asc` removed.
+- `/security/`, `/privacy-policy/` (now "Privacy Policy and Terms of Use"; the code of conduct moved to its
+  own page), `humans.txt`, `privacy.json`, `CONTRIBUTING.md`, `CONTENT_LICENSE.md` and `LICENSE` updated for
+  this site. `check-build.sh` also checks the key, humans.txt, privacy.json and the policy pages.
+- All writing moves here from mlaify.io, which 301-redirects `/writing/*` (and the moved images) to
+  matthewd.xyz: the Anpviz IPC-D240W-S camera security post and its two evidence graphics are new here;
+  posts 1–6 already were (this site keeps their personal bylines, photo credits and Instagram links).
+
 ### Added
 - New theme foundation: Tailwind CSS 3, Pagefind 1.4 search, JetBrains Mono + Inter fonts.
 - Personal copper accent palette (`#b45309` family) site-wide; Aegis (cyan) and AttackMap (amber) accents preserved for Phase 2.

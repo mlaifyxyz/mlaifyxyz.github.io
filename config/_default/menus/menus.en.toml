@@ -4,13 +4,13 @@
   weight = 10
 
 [[main]]
-  name = "Projects"
-  url = "/projects/"
+  name = "About"
+  url = "/about/"
   weight = 20
 
 [[main]]
-  name = "About"
-  url = "/about/"
+  name = "Projects"
+  url = "https://mlaify.io/"
   weight = 30
 
 [[footer]]
@@ -19,29 +19,34 @@
   weight = 10
 
 [[footer]]
-  name = "Projects"
-  url = "/projects/"
-  weight = 15
-
-[[footer]]
-  name = "Archives"
+  name = "Writing"
   url = "/writing/"
   weight = 20
 
 [[footer]]
-  name = "Principles"
-  url = "/principles/"
+  name = "Projects (mlaify.io)"
+  url = "https://mlaify.io/"
   weight = 25
 
 [[footer]]
-  name = "Contribute"
-  url = "/contribute/"
-  weight = 28
+  name = "Contributing"
+  url = "/contributing/"
+  weight = 30
+
+[[footer]]
+  name = "Code of Conduct"
+  url = "/code-of-conduct/"
+  weight = 32
+
+[[footer]]
+  name = "License"
+  url = "/license/"
+  weight = 34
 
 [[footer]]
   name = "Privacy"
   url = "/privacy-policy/"
-  weight = 30
+  weight = 36
 
 [[footer]]
   name = "Security"
@@ -50,7 +55,7 @@
 
 [[footer]]
   name = "GitHub"
-  url = "https://github.com/mdavistffhrtporg"
+  url = "https://github.com/mlaifyxyz/mlaifyxyz.github.io"
   weight = 50
 
 [[social]]

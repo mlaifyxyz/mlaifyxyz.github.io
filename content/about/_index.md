@@ -10,7 +10,7 @@ cascade:
 
 ![Matt D.](/images/pic_mdavis.png)
 
-I'm Matt. I write at [Fedora Magazine](https://fedoramagazine.org/) as a contributor and editor for the [Fedora Project](https://fedoraproject.org/), and I build small, security-first open source tools — most recently [AttackMap](/attackmap/), a local-first defensive security analyzer for real codebases.
+I'm Matt. I write at [Fedora Magazine](https://fedoramagazine.org/) as a contributor and editor for the [Fedora Project](https://fedoraproject.org/), and I build small, security-first open source tools — most recently [AttackMap](https://mlaify.io/attackmap/), a local-first defensive security analyzer for real codebases.
 
 I've been working in open source since 2003 — long enough to remember Fedora Core 1. My background is psychology and interdisciplinary studies: BA from the [University of Texas at Arlington](https://www.uta.edu/) in 2010, MS from the [University of North Texas](https://www.unt.edu/) in 2019. While at UTA I did neuroscience research in electrophysiology and pain and contributed to several publications. Day job has been in IT and cybersecurity.
 
@@ -18,7 +18,7 @@ I used to do professional photography. I no longer do — that part of my life e
 
 ## What I'm working on
 
-The way the projects on this site look — small, protocol-first, status-honest, documentation-close-to-code — isn't an accident. It comes from a few convictions:
+The way my projects on [mlaify.io](https://mlaify.io/) look — small, protocol-first, status-honest, documentation-close-to-code — isn't an accident. It comes from a few convictions:
 
 **Security architecture is design work, not paperwork.** Threat models and protocol RFCs are first-class artifacts in my repos, written before the code stabilizes, not retroactively to satisfy a checklist. When a project lacks a threat model, I say so on its page.
 
@@ -26,10 +26,11 @@ The way the projects on this site look — small, protocol-first, status-honest,
 
 **Composability over monoliths.** I favor module boundaries that let other people swap pieces — AttackMap's analyzers are independent packages you can add to, swap, or run a subset of, and its LLM providers are pluggable. Costs more upfront and pays off everywhere downstream.
 
-See [build principles](/principles/) for the longer version.
+See [build principles](https://mlaify.io/principles/) for the longer version.
 
 ## Elsewhere
 
+- [mlaify.io](https://mlaify.io/) — projects
 - [GitHub](https://github.com/mdavistffhrtporg) — code
 - [Bluesky](https://bsky.app/profile/matthewd.xyz) — short-form
 - [GitLab](https://gitlab.com/matthewdxyz) — mirrors

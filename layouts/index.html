@@ -1,101 +1,26 @@
 {{ define "main" }}
-<!-- Hero -->
-<section class="border-b border-ink-200/60 dark:border-ink-800/60">
-  <div class="container-page py-16 lg:py-24">
-    <div class="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
-      <img src="{{ "/images/pic-mdavis-home.svg" | relURL }}"
-           alt="Matt D."
-           class="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-2 ring-copper-200 dark:ring-copper-800" />
-      <div class="flex-1">
-        <h1 class="text-balance text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl dark:text-white">
-          Matt D.
-        </h1>
-        <p class="mt-3 text-lg text-ink-600 dark:text-ink-300">
-          {{ site.Params.tagline }}
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="/writing/" class="btn btn-primary">Read writing</a>
-          <a href="/me/" class="btn btn-ghost">About</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="container-column pt-16 pb-6 sm:pt-20">
+  <img src="{{ "/images/pic-mdavis-home.svg" | relURL }}"
+       alt="Matt D."
+       width="72" height="72"
+       class="h-[72px] w-[72px] rounded-full object-cover ring-1 ring-copper-200 dark:ring-copper-800" />
+  <p class="kicker mt-8">matthewd.xyz</p>
+  <h1 class="page-title mt-3">Matt D.</h1>
+  <p class="page-lead">{{ site.Params.intro | default site.Params.tagline }}</p>
+  <p class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+    <a class="text-link" href="/about/">About me</a>
+    <a class="text-link" href="/writing/">All writing</a>
+    <a class="text-link" href="https://mlaify.io/">Projects at mlaify.io ↗</a>
+  </p>
 </section>
 
-<!-- Projects -->
-<section class="border-b border-ink-200/60 dark:border-ink-800/60">
-  <div class="container-page py-16">
-    <div class="mb-10 flex items-end justify-between">
-      <h2 class="text-3xl font-semibold tracking-tight text-ink-900 dark:text-white">Projects</h2>
-      <a href="/projects/" class="text-sm font-medium text-copper-700 hover:text-copper-800 dark:text-copper-400 dark:hover:text-copper-300">
-        All projects →
-      </a>
-    </div>
+<div class="container-column"><div class="ornament" aria-hidden="true">❦</div></div>
 
-    {{- $products := site.Params.products }}
-    {{- $entries := slice }}
-    {{- range $k, $p := $products }}
-      {{- $entries = $entries | append (dict "key" $k "name" $p.name "tagline" $p.tagline "status" $p.status "accent" $p.accent "url" $p.url "weight" $p.weight) }}
-    {{- end }}
-    {{- $featured := first 2 (sort $entries "weight" "asc") }}
-    <div class="grid gap-6 lg:grid-cols-2">
-      {{- range $featured }}
-        <a href="{{ .url }}" data-accent="{{ .accent }}" class="group card card-hover flex flex-col">
-          <div class="flex items-start justify-between gap-4">
-            <h3 class="text-2xl font-semibold tracking-tight text-ink-900 group-hover:accent-text dark:text-white">
-              {{ .name }}
-            </h3>
-            <span class="status-badge status-{{ .status }}">{{ .status }}</span>
-          </div>
-          <p class="mt-3 text-ink-600 dark:text-ink-300">{{ .tagline }}</p>
-        </a>
-      {{- end }}
-    </div>
-
-    {{- $small := after 2 (sort $entries "weight" "asc") }}
-    {{- with $small }}
-      <ul class="mt-6 flex flex-wrap gap-3 text-sm">
-        {{- range . }}
-          <li>
-            <a href="{{ .url }}" class="inline-flex items-center gap-2 rounded-full border border-ink-200 px-4 py-2 hover:border-copper-300 hover:text-copper-700 dark:border-ink-800 dark:hover:border-copper-600 dark:hover:text-copper-400">
-              {{ .name }}
-              <span class="text-xs text-ink-500 dark:text-ink-400">{{ .status }}</span>
-            </a>
-          </li>
-        {{- end }}
-      </ul>
-    {{- end }}
+<section class="container-column" aria-labelledby="writing-heading">
+  <h2 id="writing-heading" class="kicker">Writing</h2>
+  <div class="mt-6">
+    {{ partial "post-index.html" (first 10 (where site.RegularPages "Section" "writing")) }}
   </div>
-</section>
-
-<!-- Latest writing -->
-<section class="container-page py-16">
-  <div class="mb-10 flex items-end justify-between">
-    <h2 class="text-3xl font-semibold tracking-tight text-ink-900 dark:text-white">Latest writing</h2>
-    <a href="/writing/" class="text-sm font-medium text-copper-700 hover:text-copper-800 dark:text-copper-400 dark:hover:text-copper-300">
-      All posts →
-    </a>
-  </div>
-
-  {{- $posts := first 5 (where site.RegularPages "Section" "writing") }}
-  <ul class="divide-y divide-ink-200 dark:divide-ink-800">
-    {{- range $posts }}
-      <li class="py-5">
-        <a href="{{ .RelPermalink }}" class="group flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
-          <div class="flex-1">
-            <h3 class="text-lg font-medium text-ink-900 group-hover:text-copper-700 dark:text-white dark:group-hover:text-copper-400">
-              {{ .Title }}
-            </h3>
-            {{- with .Params.description }}
-              <p class="mt-1 text-sm text-ink-600 dark:text-ink-400">{{ . }}</p>
-            {{- end }}
-          </div>
-          <time class="text-sm text-ink-500 dark:text-ink-400" datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "Jan 2, 2006" }}
-          </time>
-        </a>
-      </li>
-    {{- end }}
-  </ul>
+  <p class="mt-8 text-sm"><a class="text-link" href="/writing/">Every post →</a></p>
 </section>
 {{ end }}
