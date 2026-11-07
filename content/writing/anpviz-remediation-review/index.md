@@ -1,7 +1,7 @@
 ---
 title: "Anpviz's first remediation image: wrong board, partial fixes, and open questions"
 date: 2026-11-07T12:00:00Z
-draft: true
+draft: false
 description: "A static review of Anpviz's V3.6.3.1 image, its response to the IPC-D240W-S disclosure, and the fixes still to verify."
 author: "Matt"
 tags: ["Security", "Cameras", "Firmware", "Research"]
