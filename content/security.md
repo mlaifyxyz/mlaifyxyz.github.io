@@ -16,13 +16,13 @@ Please report security issues via one of the following channels, providing as mu
 
 - **Email**: [security@matthewd.xyz](mailto:security@matthewd.xyz)
 - **Email**: [security@mlaify.io](mailto:security@mlaify.io)
-- **PGP key**: [matthewd.xyz/matthewdxyz.asc](https://matthewd.xyz/matthewdxyz.asc)
+- **PGP key**: [matthewd.org/matthewdxyz.asc](https://matthewd.org/matthewdxyz.asc)
 
 ### Systems in Scope
 
-This policy covers any digital assets owned, operated, or maintained by matthewd.xyz, including:
+This policy covers any digital assets owned, operated, or maintained by Matt D., including:
 
-- **matthewd.xyz** — this site
+- **matthewd.org** — this site
 - **mlaify.io**
 - **AttackMap** — defensive security analysis engine ([github.com/mlaify](https://github.com/mlaify))
 

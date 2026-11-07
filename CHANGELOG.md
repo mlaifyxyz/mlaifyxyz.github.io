@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### matthewd.org (2026-11-07)
+
+- The site moves to **https://matthewd.org** as the personal site; projects live on mlaify.io.
+- Hosting: Cloudflare Workers static assets (Worker `matthewd-org`, `wrangler.jsonc`), deployed by
+  `.github/workflows/deploy.yml` after the operator approves the `production` environment. PRs build only.
+- Added `static/_headers`, `scripts/check-build.sh`, `.nvmrc`, and `build:cf` / `deploy` / `preview` scripts.
+- Removed the GitHub Pages workflow (`hugo.yml`), `CNAME`, `static/CNAME` and `.nojekyll`. matthewd.xyz is
+  served by the mlaify.io Worker.
+- Removed the project pages (Aegis, AttackMap, OmekaRapper, OpenSift, OpenContractRx), `/projects/`,
+  `/principles/`, `/contribute/`, the `[products]` params and the homepage projects section. Nav and footer
+  link to mlaify.io instead; About links to mlaify.io for AttackMap and the build principles.
+- Homepage About button points at `/about/` (was the `/me/` alias).
+- Domain references in config, privacy, security, humans.txt and privacy.json updated to matthewd.org.
+
 ### Added
 - New theme foundation: Tailwind CSS 3, Pagefind 1.4 search, JetBrains Mono + Inter fonts.
 - Personal copper accent palette (`#b45309` family) site-wide; Aegis (cyan) and AttackMap (amber) accents preserved for Phase 2.

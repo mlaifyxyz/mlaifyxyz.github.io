@@ -5,9 +5,9 @@ GitHub: https://github.com/mdavistffhrtporg
 Location: United States
 
 /* SITE */
-Domain: matthewd.xyz
+Domain: matthewd.org
 Purpose: Personal website and writing
-Stack: Hugo, GitHub Pages, Cloudflare
+Stack: Hugo, Cloudflare Workers static assets
 Comments: GitHub Discussions (Giscus)
 Analytics: Minimal, security-focused only
 
@@ -28,5 +28,5 @@ Security researchers
 Thoughtful readers
 
 /* META */
-Last updated: 2025-12-27
+Last updated: 2026-11-07
 Standards: humans.txt (humanstxt.org)

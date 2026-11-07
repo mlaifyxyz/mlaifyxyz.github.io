@@ -16,21 +16,10 @@ showBuildInfo = false
 [org]
   name = "Matt D."
   legalName = "Matt D."
-  url = "https://matthewd.xyz/"
-  logo = "https://matthewd.xyz/apple-touch-icon.png"
+  url = "https://matthewd.org/"
+  logo = "https://matthewd.org/apple-touch-icon.png"
   sameAs = [
     "https://github.com/mdavistffhrtporg",
     "https://gitlab.com/matthewdxyz",
     "https://bsky.app/profile/matthewd.xyz",
   ]
-
-# Per-project params used by the /projects/ hub and homepage projects section.
-[products]
-  [products.attackmap]
-    name = "AttackMap"
-    tagline = "Local-first defensive security analysis for real codebases."
-    status = "beta"
-    accent = "attackmap"
-    url = "/attackmap/"
-    repoUrl = "https://github.com/mlaify/attackmap"
-    weight = 20

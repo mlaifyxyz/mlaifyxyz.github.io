@@ -4,14 +4,14 @@
   weight = 10
 
 [[main]]
-  name = "Projects"
-  url = "/projects/"
-  weight = 20
-
-[[main]]
   name = "About"
   url = "/about/"
   weight = 30
+
+[[main]]
+  name = "Projects"
+  url = "https://mlaify.io/"
+  weight = 40
 
 [[footer]]
   name = "About"
@@ -19,24 +19,14 @@
   weight = 10
 
 [[footer]]
-  name = "Projects"
-  url = "/projects/"
-  weight = 15
-
-[[footer]]
   name = "Archives"
   url = "/writing/"
   weight = 20
 
 [[footer]]
-  name = "Principles"
-  url = "/principles/"
+  name = "Projects (mlaify.io)"
+  url = "https://mlaify.io/"
   weight = 25
-
-[[footer]]
-  name = "Contribute"
-  url = "/contribute/"
-  weight = 28
 
 [[footer]]
   name = "Privacy"
