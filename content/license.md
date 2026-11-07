@@ -10,7 +10,7 @@ This site has two licenses: one for what I write and photograph, one for the cod
 
 ## Writing and original media: CC BY-NC-SA 4.0
 
-All original written content and original media on matthewd.org (posts, essays, poems, pages, and my own photographs and graphics) are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All original written content and original media on matthewd.xyz (posts, essays, poems, pages, and my own photographs and graphics) are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 **You are free to:**
 
@@ -19,7 +19,7 @@ All original written content and original media on matthewd.org (posts, essays, 
 
 **Under the following terms:**
 
-- **Attribution**: give appropriate credit (for example, "Matt D., matthewd.org", with a link to the original), provide a link to the license, and indicate if changes were made.
+- **Attribution**: give appropriate credit (for example, "Matt D., matthewd.xyz", with a link to the original), provide a link to the license, and indicate if changes were made.
 - **NonCommercial**: you may not use the material for commercial purposes.
 - **ShareAlike**: if you remix, transform, or build upon the material, you must distribute your contributions under the same license.
 

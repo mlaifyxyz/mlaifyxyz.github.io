@@ -8,7 +8,7 @@
 # than none. scripts/check-build.sh fails the build if this file is missing.
 
 /
-  Link: </sitemap.xml>; rel="sitemap"; type="application/xml", </index.xml>; rel="alternate"; type="application/rss+xml"; title="matthewd.org"
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml", </index.xml>; rel="alternate"; type="application/rss+xml"; title="matthewd.xyz"
 
 /*
   X-Frame-Options: SAMEORIGIN

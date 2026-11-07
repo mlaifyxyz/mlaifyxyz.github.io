@@ -1,4 +1,4 @@
-# matthewd.org Vulnerability Disclosure Policy
+# matthewd.xyz Vulnerability Disclosure Policy
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This website welcomes feedback from security researchers and the general public 
 
 This policy applies to:
 
-- **matthewd.org**, Matt D.'s personal website; and
+- **matthewd.xyz**, Matt D.'s personal website, also served at **matthewd.org**; and
 - this repository, [mlaifyxyz/mlaifyxyz.github.io](https://github.com/mlaifyxyz/mlaifyxyz.github.io).
 
 Projects published under mlaify.io (AttackMap, grrclone and others) are covered by the [mlaify.io security policy](https://mlaify.io/security/).
@@ -44,9 +44,9 @@ In participating in our vulnerability disclosure program in good faith, we ask t
 
 Please report security issues by email to [security@mlaify.io](mailto:security@mlaify.io), providing all relevant information. The more details you provide, the easier it will be for us to triage and fix the issue. Do not report vulnerabilities in public issues, pull requests or comments.
 
-If practical, encrypt your report with the security@mlaify.io PGP key: [publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc](https://matthewd.org/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc) (also in this repository under static/), fingerprint 3864 2D27 5F82 0A02 6F3B FC5E 7E44 D7D0 5BAF D4DF.
+If practical, encrypt your report with the security@mlaify.io PGP key: [publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc](https://matthewd.xyz/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc) (also in this repository under static/), fingerprint 3864 2D27 5F82 0A02 6F3B FC5E 7E44 D7D0 5BAF D4DF.
 
-Machine-readable contact details: [https://matthewd.org/.well-known/security.txt](https://matthewd.org/.well-known/security.txt).
+Machine-readable contact details: [https://matthewd.xyz/.well-known/security.txt](https://matthewd.xyz/.well-known/security.txt).
 
 ## Safe Harbor
 

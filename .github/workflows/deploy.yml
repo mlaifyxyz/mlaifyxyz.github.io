@@ -1,4 +1,4 @@
-# Builds matthewd.org on every PR, and deploys it to Cloudflare (Workers static
+# Builds matthewd.xyz on every PR, and deploys it to Cloudflare (Workers static
 # assets) after the operator approves.
 #
 # A push to main starts the deploy job in the `production` environment, which waits
@@ -55,7 +55,7 @@ jobs:
         runs-on: ubuntu-24.04
         environment:
             name: production
-            url: https://matthewd.org/
+            url: https://matthewd.xyz/
         steps:
             - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
               with:

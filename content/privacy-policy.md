@@ -23,7 +23,7 @@ cascade:
 
 ## Overview
 
-This website (`matthewd.org`) is the personal website of Matt D.
+This website (`matthewd.xyz`, also served at `matthewd.org`) is the personal website of Matt D.
 
 The site is designed to be simple, secure, and respectful of visitor privacy. It does not sell personal data, does not run advertising networks, and does not engage in behavioral profiling or targeted advertising.
 

@@ -1,5 +1,5 @@
 {
-    // matthewd.org — Hugo + Pagefind, served as Workers static assets.
+    // matthewd.xyz — Hugo + Pagefind, served as Workers static assets.
     //
     // Same pattern as mlaify.io (mlaify/mlaify.github.io): no `main` and no Worker
     // script, so requests are served entirely by Cloudflare's asset worker — no
@@ -8,7 +8,7 @@
     //
     // Deployed only by .github/workflows/deploy.yml after the operator approves the
     // `production` environment. See README.md "Deploy".
-    "name": "matthewd-org",
+    "name": "matthewd-xyz",
     "compatibility_date": "2026-07-28",
 
     "assets": {
@@ -22,11 +22,19 @@
         "not_found_handling": "404-page"
     },
 
-    // Apex custom domain only. `wrangler deploy` replaces any domains attached in
-    // the dashboard, so every hostname this Worker serves must be listed here.
-    // `www` is intentionally absent: it should 301 to the apex with a Cloudflare
-    // Redirect Rule, not be a second custom domain.
+    // Apex custom domains only. matthewd.xyz is primary (Hugo baseURL, canonical
+    // links); matthewd.org serves the same site directly, not as a redirect.
+    // `wrangler deploy` replaces any domains attached in the dashboard, so every
+    // hostname this Worker serves must be listed here. A hostname can be attached
+    // to only one Worker: matthewd.xyz must first be removed from the mlaify-io
+    // Worker (mlaify/mlaify.github.io) and that deploy approved, before this
+    // Worker's first deploy. `www` is intentionally absent: it should 301 to the
+    // apex with a Cloudflare Redirect Rule, not be another custom domain.
     "routes": [
+        {
+            "pattern": "matthewd.xyz",
+            "custom_domain": true
+        },
         {
             "pattern": "matthewd.org",
             "custom_domain": true

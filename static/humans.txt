@@ -7,7 +7,7 @@ Projects: https://mlaify.io
 Location: United States
 
 /* SITE */
-Domain: matthewd.org
+Domain: matthewd.xyz (also served at matthewd.org)
 Purpose: Personal website and writing
 Stack: Hugo, Pagefind, Cloudflare Workers static assets
 Typography: system serif and sans-serif fonts (no web fonts)

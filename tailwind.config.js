@@ -40,7 +40,7 @@ module.exports = {
           "system-ui",
           "sans-serif",
         ],
-        // Reading face for matthewd.org: system serifs only, so no font is
+        // Reading face for matthewd.xyz: system serifs only, so no font is
         // downloaded from a third party (Old Style stack, modernfontstacks.com).
         serif: [
           "Iowan Old Style",

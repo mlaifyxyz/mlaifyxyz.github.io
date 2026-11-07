@@ -38,7 +38,7 @@
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
-  /* matthewd.org reads like paper: warm off-white in light mode, same ink
+  /* matthewd.xyz reads like paper: warm off-white in light mode, same ink
      and copper palette as mlaify.io. */
   body {
     @apply bg-ink-50 text-ink-800 dark:bg-ink-950 dark:text-ink-200;
@@ -174,7 +174,7 @@
 }
 
 /* ------------------------------------------------------------------
-   matthewd.org — personal writing design.
+   matthewd.xyz — personal writing design.
    One narrow reading column, serif text, small-caps kickers and an
    ornamental rule. mlaify.io keeps the wide, card-based project layout.
    ------------------------------------------------------------------ */

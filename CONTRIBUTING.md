@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to **matthewd.org**, Matt D.'s personal website. Most of the site is personal writing, but corrections, suggestions, and fixes are welcome. Projects (AttackMap, grrclone and others) live on [mlaify.io](https://mlaify.io) and have their own repositories and guides.
+Thank you for your interest in contributing to **matthewd.xyz**, Matt D.'s personal website. Most of the site is personal writing, but corrections, suggestions, and fixes are welcome. Projects (AttackMap, grrclone and others) live on [mlaify.io](https://mlaify.io) and have their own repositories and guides.
 
 By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
@@ -30,7 +30,7 @@ Every pull request runs the production build (`npm run build:cf`) in CI. Merges 
 - **Posts:** each post is a page bundle under `content/writing/<slug>/index.md`.
 - **Images:** put post-specific images in the post's bundle, or shared ones in `static/images/`. Always give descriptive `alt` text, and credit third-party images in the caption.
 - **Tone:** match the existing voice of the site: direct, personal, and considerate.
-- **Design:** matthewd.org uses its own writing layout (narrow serif column) on the shared copper and warm-neutral palette. Keep the project-style card layouts on mlaify.io.
+- **Design:** matthewd.xyz uses its own writing layout (narrow serif column) on the shared copper and warm-neutral palette. Keep the project-style card layouts on mlaify.io.
 - **Privacy:** do not introduce trackers, analytics, web fonts, or other third-party resources without discussion. The site is intentionally privacy-respecting and static-first.
 
 ## Local Development

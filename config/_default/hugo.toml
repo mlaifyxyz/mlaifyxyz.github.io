@@ -1,5 +1,5 @@
-title = "matthewd.org"
-baseurl = "https://matthewd.org/"
+title = "matthewd.xyz"
+baseurl = "https://matthewd.xyz/"
 disableAliases = false
 disableHugoGeneratorInject = true
 disableKinds = []

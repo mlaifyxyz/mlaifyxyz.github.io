@@ -3,7 +3,7 @@ title: "Security"
 slug: "security"
 url: "/security/"
 kicker: "Policy"
-description: "How to report a vulnerability in matthewd.org."
+description: "How to report a vulnerability in matthewd.xyz."
 lastmod: 2026-11-07
 draft: false
 comments: false
@@ -11,7 +11,7 @@ comments: false
 
 ## Reporting a vulnerability
 
-This website welcomes feedback from security researchers and the general public. If you believe you have found a vulnerability, privacy issue, exposed data, or other security problem in matthewd.org, I want to hear from you.
+This website welcomes feedback from security researchers and the general public. If you believe you have found a vulnerability, privacy issue, exposed data, or other security problem in matthewd.xyz, I want to hear from you.
 
 ### Official channels
 
@@ -25,7 +25,7 @@ Please don't report vulnerabilities in public GitHub issues or comments.
 
 ### Systems in scope
 
-- **matthewd.org**: this site
+- **matthewd.xyz** and **matthewd.org**: this site (the same site at two addresses)
 - **Its source repository:** [github.com/mlaifyxyz/mlaifyxyz.github.io](https://github.com/mlaifyxyz/mlaifyxyz.github.io)
 
 My projects (AttackMap, grrclone and others) are covered by the [mlaify.io security policy](https://mlaify.io/security/).

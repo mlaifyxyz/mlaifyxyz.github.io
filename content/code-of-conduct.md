@@ -1,7 +1,7 @@
 ---
 title: "Code of Conduct"
 kicker: "Community"
-description: "The Contributor Covenant 3.0, as it applies to comments, issues, and discussions on matthewd.org."
+description: "The Contributor Covenant 3.0, as it applies to comments, issues, and discussions on matthewd.xyz."
 lastmod: 2026-11-07
 comments: false
 ---

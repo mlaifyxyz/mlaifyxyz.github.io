@@ -1,15 +1,16 @@
-# matthewd.org security contacts and policy
+# matthewd.xyz security contacts and policy
 
 # Our security contact channel
 Contact: mailto:security@mlaify.io
 
 # If practical, use PGP encryption
-Encryption: https://matthewd.org/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc
+Encryption: https://matthewd.xyz/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc
 
 # Link to our vulnerability disclosure policy
-Policy: https://matthewd.org/security/
+Policy: https://matthewd.xyz/security/
 
-# The canonical location of this file
+# The canonical locations of this file (the same site is served at both)
+Canonical: https://matthewd.xyz/.well-known/security.txt
 Canonical: https://matthewd.org/.well-known/security.txt
 
 # Languages that we speak and understand

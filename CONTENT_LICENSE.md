@@ -1,7 +1,7 @@
 # Content License
 
 All original written content and original media in this repository and on
-https://matthewd.org, including but not limited to:
+https://matthewd.xyz, including but not limited to:
 
 - Blog posts
 - Essays, articles, and poems
@@ -33,6 +33,6 @@ post's caption), quotations, and linked material are not covered by this
 license and remain under their owners' terms.
 
 Code and configuration are licensed separately under the MIT License; see
-[LICENSE](LICENSE). A summary of both is at https://matthewd.org/license/.
+[LICENSE](LICENSE). A summary of both is at https://matthewd.xyz/license/.
 
 © 2025-2026 Matt D. All rights reserved except where licensed above.
