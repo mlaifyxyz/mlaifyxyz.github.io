@@ -32,6 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `/security/`, `/privacy-policy/` (now "Privacy Policy and Terms of Use"; the code of conduct moved to its
   own page), `humans.txt`, `privacy.json`, `CONTRIBUTING.md`, `CONTENT_LICENSE.md` and `LICENSE` updated for
   matthewd.org. `check-build.sh` also checks the key, humans.txt, privacy.json and the policy pages.
+- Moved the Anpviz IPC-D240W-S camera security post (`/writing/anpviz-camera-security/`) and its two
+  evidence graphics here from mlaify.io, which now 301-redirects the old URLs to matthewd.org.
 
 ### Added
 - New theme foundation: Tailwind CSS 3, Pagefind 1.4 search, JetBrains Mono + Inter fonts.
