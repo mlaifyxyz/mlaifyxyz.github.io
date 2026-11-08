@@ -4,6 +4,11 @@
   weight = 10
 
 [[main]]
+  name = "Camera research"
+  url = "/anpviz-security-vuln-2026/"
+  weight = 15
+
+[[main]]
   name = "About"
   url = "/about/"
   weight = 20

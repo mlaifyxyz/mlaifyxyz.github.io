@@ -1,0 +1,4 @@
+62c62
+<                 <EncodeConfig Stream="1" Enable="1" Resolution="2560X1440" EncodeFormat="H265" BitRateControl="VBR" Initquant="100" BitRate="3000" FrameRate="25" />
+---
+>                 <EncodeConfig Stream="1" Enable="1" Resolution="2880X1620" EncodeFormat="H265" BitRateControl="VBR" Initquant="100" BitRate="3000" FrameRate="25" />

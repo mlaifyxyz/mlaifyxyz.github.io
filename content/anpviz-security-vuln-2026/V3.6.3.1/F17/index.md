@@ -1,0 +1,53 @@
+---
+title: "F17: Serial-gated UDP control operations (V3.6.3.1)"
+description: "insufficiently remediated in supplied MCA50E image"
+date: 2026-11-08T12:00:00Z
+url: /anpviz-security-vuln-2026/v3.6.3.1/f17/
+draft: false
+comments: false
+---
+
+[← All findings](/anpviz-security-vuln-2026/) · [Repository](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026)
+
+**Document type:** local CVE candidate assessment, **not** a published CVE Record. **CVE ID:** unassigned. **Product scope:** Anpviz IPC-D240W-S V3.5.2.1 captured from the owner's MCA40E camera; the V3.6.3.1 comparison image is an MCA50E image sent in error and was not flashed to this model.
+
+## Finding
+
+Reset, reboot, network and factory operations are gated by serial and flag state; the new authentication check also accepts F1.
+
+**Status in this image:** insufficiently remediated in supplied MCA50E image.
+
+**Evidence limit:** Operation success and authentication state on each model need a device test.
+
+## Classification and severity
+
+- **Proposed CWE:** [CWE-306](https://cwe.mitre.org/data/definitions/306.html), [CWE-284](https://cwe.mitre.org/data/definitions/284.html)
+- **CVSS v4.0 score:** **Not scored** — current evidence does not support a defensible numeric impact/attack vector, this version lacks the issue, or the specific defect was fixed.
+- **CVSS v4.0 vector:** Not assigned.
+- **Scoring basis:** Operation success and authentication state on each model need a device test.
+- **CVE candidacy:** Needs coordinator/CNA review for grouping, affected models and version status; do not equate this finding ID with a CVE ID.
+
+## Source screenshots
+
+The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompilation, **not** photographs of the Ghidra GUI or recovered vendor source. The original export is authoritative; image selection can omit relevant lines elsewhere in the function.
+
+- [F17: UDP control operation — F17-CLEAR_FACTORY_CFG-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F17/F17-CLEAR_FACTORY_CFG-new-01-L15-L31.png) — `V3.6.3.1/F17/F17-CLEAR_FACTORY_CFG-new.c` lines 15–31; source SHA-256 `92670866805119dcaa785aece13be6e982d4851d8ee0ff79857319c1ac923a94`.
+- [F17: UDP control operation — F17-CLEAR_SOFT_SN-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F17/F17-CLEAR_SOFT_SN-new-01-L14-L30.png) — `V3.6.3.1/F17/F17-CLEAR_SOFT_SN-new.c` lines 14–30; source SHA-256 `d82fa8bb39a3e4573e0a451be0ef5bdae48638bb3b0171eb58957f38464a859f`.
+- [F17: UDP control operation — F17-MODE_FACTORY-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F17/F17-MODE_FACTORY-new-01-L21-L37.png) — `V3.6.3.1/F17/F17-MODE_FACTORY-new.c` lines 21–37; source SHA-256 `62ad1feb3238c5ee0fa14a5c820f288a01ac72b365b00627a6db2055e1fb9b3f`.
+
+## Related published CVEs
+
+- No verified related CVE linked to this specific finding; this is not an exhaustive database search.
+
+## Case references
+
+- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
+- [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
+- CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
+
+## Source exports
+
+- [F17-CLEAR_FACTORY_CFG-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F17/F17-CLEAR_FACTORY_CFG-new.c)
+- [F17-CLEAR_SOFT_SN-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F17/F17-CLEAR_SOFT_SN-new.c)
+- [F17-MODE_FACTORY-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F17/F17-MODE_FACTORY-new.c)

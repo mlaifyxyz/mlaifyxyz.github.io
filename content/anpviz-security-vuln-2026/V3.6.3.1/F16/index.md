@@ -1,0 +1,76 @@
+---
+title: "F16: Credentials embedded in ONVIF media URI (V3.6.3.1)"
+description: "insufficiently remediated in supplied MCA50E image"
+date: 2026-11-08T12:00:00Z
+url: /anpviz-security-vuln-2026/v3.6.3.1/f16/
+draft: false
+comments: false
+---
+
+[← All findings](/anpviz-security-vuln-2026/) · [Repository](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026)
+
+**Document type:** local CVE candidate assessment, **not** a published CVE Record. **CVE ID:** unassigned. **Product scope:** Anpviz IPC-D240W-S V3.5.2.1 captured from the owner's MCA40E camera; the V3.6.3.1 comparison image is an MCA50E image sent in error and was not flashed to this model.
+
+## Finding
+
+The old URI builders insert administrator-derived material. The new snapshot URI is fixed; the stream URI can still contain it under shipped defaults.
+
+**Status in this image:** insufficiently remediated in supplied MCA50E image.
+
+**Evidence limit:** Live reachability and reuse of the returned credential material remain untested.
+
+## Classification and severity
+
+- **Proposed CWE:** [CWE-522](https://cwe.mitre.org/data/definitions/522.html), [CWE-200](https://cwe.mitre.org/data/definitions/200.html)
+- **CVSS v4.0 score:** **Not scored** — current evidence does not support a defensible numeric impact/attack vector, this version lacks the issue, or the specific defect was fixed.
+- **CVSS v4.0 vector:** Not assigned.
+- **Scoring basis:** Live reachability and reuse of the returned credential material remain untested.
+- **CVE candidacy:** Needs coordinator/CNA review for grouping, affected models and version status; do not equate this finding ID with a CVE ID.
+
+## Source screenshots
+
+The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompilation, **not** photographs of the Ghidra GUI or recovered vendor source. The original export is authoritative; image selection can omit relevant lines elsewhere in the function.
+
+- [F16: ONVIF media URI credentials — F16-GetSnapshotUri-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-GetSnapshotUri-new.annot-01-L11-L27.png) — `V3.6.3.1/F16/F16-GetSnapshotUri-new.annot.c` lines 11–27; source SHA-256 `1f37f67164976e8b102fd07a64c0c36b08c22205f21a2f0e63bf28d5ff07cf13`.
+- [F16: ONVIF media URI credentials — F16-GetSnapshotUri-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-GetSnapshotUri-new-01-L11-L27.png) — `V3.6.3.1/F16/F16-GetSnapshotUri-new.c` lines 11–27; source SHA-256 `1f37f67164976e8b102fd07a64c0c36b08c22205f21a2f0e63bf28d5ff07cf13`.
+- [F16: ONVIF media URI credentials — F16-GetStreamUri-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-GetStreamUri-new.annot-01-L17-L33.png) — `V3.6.3.1/F16/F16-GetStreamUri-new.annot.c` lines 17–33; source SHA-256 `dac5ac5252b3e290e0cb1bcf54f4f1bb2e2ca525da646631356d19e6bf5942e3`.
+- [F16: ONVIF media URI credentials — F16-GetStreamUri-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-GetStreamUri-new-01-L17-L33.png) — `V3.6.3.1/F16/F16-GetStreamUri-new.c` lines 17–33; source SHA-256 `dac5ac5252b3e290e0cb1bcf54f4f1bb2e2ca525da646631356d19e6bf5942e3`.
+- [F16: ONVIF media URI credentials — F16-GetStreamUri_soap-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-GetStreamUri_soap-new.annot-01-L17-L33.png) — `V3.6.3.1/F16/F16-GetStreamUri_soap-new.annot.c` lines 17–33; source SHA-256 `883698612020d1c33e316e854cc3cab426ae88071b7683ea33628fdb1ad58fb0`.
+- [F16: ONVIF media URI credentials — F16-GetStreamUri_soap-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-GetStreamUri_soap-new-01-L17-L33.png) — `V3.6.3.1/F16/F16-GetStreamUri_soap-new.c` lines 17–33; source SHA-256 `883698612020d1c33e316e854cc3cab426ae88071b7683ea33628fdb1ad58fb0`.
+- [F16: ONVIF media URI credentials — F16-snap_5d010-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-snap_5d010-new.annot-01-L7-L23.png) — `V3.6.3.1/F16/F16-snap_5d010-new.annot.c` lines 7–23; source SHA-256 `55ef9b7e279e1c2798549e2a501dd8792af464c27f1e1cbe848d3b2597967bed`.
+- [F16: ONVIF media URI credentials — F16-snap_5d010-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-snap_5d010-new-01-L7-L23.png) — `V3.6.3.1/F16/F16-snap_5d010-new.c` lines 7–23; source SHA-256 `55ef9b7e279e1c2798549e2a501dd8792af464c27f1e1cbe848d3b2597967bed`.
+- [F16: ONVIF media URI credentials — F16-stream_5cdb8-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-stream_5cdb8-new.annot-01-L9-L25.png) — `V3.6.3.1/F16/F16-stream_5cdb8-new.annot.c` lines 9–25; source SHA-256 `7a1f6c7264a31307136e42565e20521c63c6313d666a0079cbaa1381152187ef`.
+- [F16: ONVIF media URI credentials — F16-stream_5cdb8-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-stream_5cdb8-new-01-L9-L25.png) — `V3.6.3.1/F16/F16-stream_5cdb8-new.c` lines 9–25; source SHA-256 `7a1f6c7264a31307136e42565e20521c63c6313d666a0079cbaa1381152187ef`.
+- [F16: ONVIF media URI credentials — F16-uri_8905c-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-uri_8905c-new.annot-01-L313-L329.png) — `V3.6.3.1/F16/F16-uri_8905c-new.annot.c` lines 313–329; source SHA-256 `b2f36921a6f12ddad1baa92df7b309046c5e24119ed37d500870942222d337d3`.
+- [F16: ONVIF media URI credentials — F16-uri_8905c-new.annot](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-uri_8905c-new.annot-02-L330-L346.png) — `V3.6.3.1/F16/F16-uri_8905c-new.annot.c` lines 330–346; source SHA-256 `b2f36921a6f12ddad1baa92df7b309046c5e24119ed37d500870942222d337d3`.
+- [F16: ONVIF media URI credentials — F16-uri_8905c-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-uri_8905c-new-01-L298-L314.png) — `V3.6.3.1/F16/F16-uri_8905c-new.c` lines 298–314; source SHA-256 `4712fcfcd912943a3998c34a19582d8817ae8ec8f9706d1f564d3daacf8e9131`.
+- [F16: ONVIF media URI credentials — F16-uri_creds_helper-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-uri_creds_helper-new-01-L16-L32.png) — `V3.6.3.1/F16/F16-uri_creds_helper-new.c` lines 16–32; source SHA-256 `39fba356bd735296184586b19555efde5618dc273525b3304976f8a8adf7070a`.
+- [F16: ONVIF media URI credentials — F16-uri_host_helper-new](/anpviz-security-vuln-2026/evidence/screenshots/V3.6.3.1/F16/F16-uri_host_helper-new-01-L6-L22.png) — `V3.6.3.1/F16/F16-uri_host_helper-new.c` lines 6–22; source SHA-256 `b62dba4d63aca91d21a46f63fef3480ef62f9e98f5145fc14c84154967fc3065`.
+
+## Related published CVEs
+
+- No verified related CVE linked to this specific finding; this is not an exhaustive database search.
+
+## Case references
+
+- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
+- [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
+- CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
+
+## Source exports
+
+- [F16-GetSnapshotUri-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetSnapshotUri-new.annot.c)
+- [F16-GetSnapshotUri-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetSnapshotUri-new.c)
+- [F16-GetStreamUri-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri-new.annot.c)
+- [F16-GetStreamUri-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri-new.c)
+- [F16-GetStreamUri_soap-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri_soap-new.annot.c)
+- [F16-GetStreamUri_soap-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri_soap-new.c)
+- [F16-snap_5d010-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-snap_5d010-new.annot.c)
+- [F16-snap_5d010-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-snap_5d010-new.c)
+- [F16-stream_5cdb8-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-stream_5cdb8-new.annot.c)
+- [F16-stream_5cdb8-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-stream_5cdb8-new.c)
+- [F16-uri_8905c-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_8905c-new.annot.c)
+- [F16-uri_8905c-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_8905c-new.c)
+- [F16-uri_creds_helper-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_creds_helper-new.c)
+- [F16-uri_host_helper-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_host_helper-new.c)

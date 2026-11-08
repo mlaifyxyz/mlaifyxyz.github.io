@@ -9,6 +9,8 @@ Projects (AttackMap, grrclone and the rest) live on **[mlaify.io](https://mlaify
 side: About, Writing (all of it — mlaify.io 301-redirects `/writing/*` here), and the
 privacy and security pages.
 
+The [Anpviz camera security evidence index](https://matthewd.xyz/anpviz-security-vuln-2026/) publishes the versioned finding dossiers, source captures and decompiler exports from [mlaifyxyz/anpviz_sec_vuln_10-2026](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026). The site serves the same route at matthewd.org.
+
 ## License
 
 - Code and configuration are licensed under the MIT License.
