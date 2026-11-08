@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="container-column py-14 sm:py-16">
+  <header>
+    {{- with .Params.kicker }}<p class="kicker">{{ . }}</p>{{ end }}
+    <h1 class="page-title mt-3">{{ .Title }}</h1>
+    {{- with .Params.lead | default .Description }}<p class="page-lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose-writing mt-10">{{ .Content }}</div>
+</section>
+{{ end }}

@@ -1,0 +1,21 @@
+0001ea60  ldr r3,[r4,#0x8]                 ->0013e108
+0001ea62  str r3,[sp,#0x10]                ->Stack[-0x1568]
+0001ea64  ldr r3,[r4,#0xc]                 ->0013e10c
+0001ea66  str r3,[sp,#0xc]                 ->Stack[-0x156c]
+0001ea68  ldr r3,[r4,#0x20]                ->0013e120
+0001ea6a  str r3,[sp,#0x8]                 ->Stack[-0x1570]
+0001ea6c  ldr r3,[r4,#0x4]                 ->0013e104
+0001ea6e  str r3,[sp,#0x4]                 ->Stack[-0x1574]
+0001ea70  movw r3,#0x22d                  
+0001ea74  str r3,[sp,#0x0]                 ->Stack[-0x1578]
+0001ea76  ldr r3,[0x0001eb60]              ->0001eb60 ->000c8e19
+0001ea78  blx 0x0001ad60                   ->0001ad60(DebugPrint)
+0001ea7c  ldr r2,[r4,#0x20]                ->0013e120
+0001ea7e  ldr r3,[0x0001ebac]              ->0001ebac ->0012eb64
+0001ea80  ldr r0,[0x0001ebb0]              ->0001ebb0 ->0013d7cc
+0001ea82  str r2,[r3,#0x0]                 ->0012eb64
+0001ea84  blx 0x000196f4                   ->000196f4(MsgGetMediaConfig)
+0001ea88  cbz r0,0x0001ea96                ->0001ea96
+0001ea8a  movw r3,#0x23a                  
+0001ea8e  ldr r2,[0x0001ebb4]              ->0001ebb4 ->000c8346
+0001ea90  str r3,[sp,#0x0]                 ->Stack[-0x1578]
