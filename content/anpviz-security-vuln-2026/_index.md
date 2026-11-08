@@ -15,6 +15,16 @@ The old V3.5.2.1 image came from a read-only capture of my own IPC-D240W-S (MCA4
 
 The F and N labels are research IDs, **not assigned CVE identifiers**. CWE mappings are proposed. Eight conditional scenarios have provisional CVSS v4.0 scores; unscored rows lack a defensible numeric assessment or are inapplicable. Anpviz's model-scope review and response are ongoing. No vendor firmware binary, calculated credential, device identifier, or operational exploit packet is hosted here.
 
+## Earlier public disclosures
+
+These reports show that related camera products and firmware families had published authentication, credential, debug-access and update concerns before this investigation. They concern different models or firmware branches; their CVEs are **not automatically applicable** to my IPC-D240W-S or Anpviz's supplied MCA50E image. The [comparison and source notes](/anpviz-security-vuln-2026/evidence/PRIOR-DISCLOSURES.md) explain the limits.
+
+- [Bishop Fox's 2018 SV3C L-Series advisory](https://www.bishopfox.com/news/2018/10/sv3c-l-series-hd-camera-multiple-vulnerabilities/) ([current advisory](https://bishopfox.com/blog/sv3c-l-series-hd-camera-advisory); [NVD CVE-2018-12666](https://nvd.nist.gov/vuln/detail/cve-2018-12666)) documented ten issues and said no fix had been released at publication.
+- [Willgues's 2024 Anpviz report](https://willgu.es/pages/anpviz-ip-camera-vuln.html) documented CVE-2024-35341 through CVE-2024-35344 and an account of repeated requests for a patch timeline without a substantive vendor response.
+- [andylee77's 2026 Anjvision disclosure repository](https://github.com/andylee77/anjvision-cve-2026) lists ten proposed issues in a different firmware family, including debug access and unsigned updates, and records contact with Anjvision and CERT/CC. Its README marks CVE IDs pending.
+
+I published a [separate account of my disclosure decision](/writing/anpviz-disclosure-decision/) and the wrong-board firmware Anpviz sent for verification.
+
 ## Finding dossiers
 
 Each page explains the old or new code, assessment limits, proposed CWE and CVSS status, and links its relevant source captures. The raw C exports are linked from the dossier pages.
