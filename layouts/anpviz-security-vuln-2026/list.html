@@ -5,6 +5,11 @@
     <h1 class="page-title mt-3">{{ .Title }}</h1>
     {{- with .Params.lead | default .Description }}<p class="page-lead">{{ . }}</p>{{ end }}
   </header>
+  <aside aria-label="Current Anpviz security advisory" class="mt-8 rounded-xl border border-copper-300 bg-copper-50 p-5 dark:border-copper-800 dark:bg-ink-900">
+    <p class="kicker">Security advisory · 9 November 2026</p>
+    <p class="mt-2 text-lg font-semibold"><a class="text-link" href="/writing/anpviz-vendor-status-advisory/">Read the Anpviz vendor remediation status advisory →</a></p>
+    <p class="mt-2 text-sm">Anpviz's statements are shown alongside one static review of a pre-release build for a different board. No compatible fix has been verified for the IPC-D240W-S.</p>
+  </aside>
   <div class="prose-writing mt-10">{{ .Content }}</div>
 </section>
 {{ end }}

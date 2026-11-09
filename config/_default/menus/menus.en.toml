@@ -1,4 +1,9 @@
 [[main]]
+  name = "Advisory"
+  url = "/writing/anpviz-vendor-status-advisory/"
+  weight = 5
+
+[[main]]
   name = "Writing"
   url = "/writing/"
   weight = 10
