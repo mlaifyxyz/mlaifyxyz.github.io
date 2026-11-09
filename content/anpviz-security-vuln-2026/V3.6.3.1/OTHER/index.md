@@ -39,11 +39,11 @@ The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompil
 
 ## Case references
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
 - [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
 - [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
 - CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
 
 ## Source exports
 
-- [OTHER-ShmRead_ShmWrite-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/OTHER/OTHER-ShmRead_ShmWrite-new.c)
+- [OTHER-ShmRead_ShmWrite-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/OTHER/OTHER-ShmRead_ShmWrite-new.c)

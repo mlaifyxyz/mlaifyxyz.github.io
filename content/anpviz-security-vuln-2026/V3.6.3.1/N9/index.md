@@ -43,15 +43,15 @@ The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompil
 
 ## Case references
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
 - [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
 - [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
 - CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
 
 ## Source exports
 
-- [N9-web_digest_auth-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N9/N9-web_digest_auth-new.annot.c)
-- [NEW-libtools-Digest-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N9/NEW-libtools-Digest-new.annot.c)
-- [NEW-libtools-Digest-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N9/NEW-libtools-Digest-new.c)
-- [NEW-libtools-Digest_AuthVerify-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N9/NEW-libtools-Digest_AuthVerify-new.annot.c)
-- [NEW-libtools-Digest_AuthVerify-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N9/NEW-libtools-Digest_AuthVerify-new.c)
+- [N9-web_digest_auth-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N9/N9-web_digest_auth-new.annot.c)
+- [NEW-libtools-Digest-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N9/NEW-libtools-Digest-new.annot.c)
+- [NEW-libtools-Digest-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N9/NEW-libtools-Digest-new.c)
+- [NEW-libtools-Digest_AuthVerify-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N9/NEW-libtools-Digest_AuthVerify-new.annot.c)
+- [NEW-libtools-Digest_AuthVerify-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N9/NEW-libtools-Digest_AuthVerify-new.c)

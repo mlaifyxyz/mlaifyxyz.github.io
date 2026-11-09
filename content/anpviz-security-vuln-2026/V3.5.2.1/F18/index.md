@@ -43,15 +43,15 @@ The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompil
 
 ## Case references
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
 - [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
 - [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
 - CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
 
 ## Source exports
 
-- [F18-dev_bind_location-old.c](/anpviz-security-vuln-2026/evidence/V3.5.2.1/F18/F18-dev_bind_location-old.c)
-- [F18-is_mac_addr_valid-old.c](/anpviz-security-vuln-2026/evidence/V3.5.2.1/F18/F18-is_mac_addr_valid-old.c)
-- [F18-modifymac-old.c](/anpviz-security-vuln-2026/evidence/V3.5.2.1/F18/F18-modifymac-old.c)
-- [F18-serialmsg-old.c](/anpviz-security-vuln-2026/evidence/V3.5.2.1/F18/F18-serialmsg-old.c)
-- [F18-set_mac-old.c](/anpviz-security-vuln-2026/evidence/V3.5.2.1/F18/F18-set_mac-old.c)
+- [F18-dev_bind_location-old.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.5.2.1/F18/F18-dev_bind_location-old.c)
+- [F18-is_mac_addr_valid-old.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.5.2.1/F18/F18-is_mac_addr_valid-old.c)
+- [F18-modifymac-old.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.5.2.1/F18/F18-modifymac-old.c)
+- [F18-serialmsg-old.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.5.2.1/F18/F18-serialmsg-old.c)
+- [F18-set_mac-old.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.5.2.1/F18/F18-set_mac-old.c)

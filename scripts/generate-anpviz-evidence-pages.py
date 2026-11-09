@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render the checked-in evidence dossiers as Hugo pages."""
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -9,6 +10,12 @@ EVIDENCE = SITE / 'static/anpviz-security-vuln-2026/evidence'
 CONTENT = SITE / 'content/anpviz-security-vuln-2026'
 BASE_URL = '/anpviz-security-vuln-2026/'
 REPO_URL = 'https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026'
+
+def github_document_links(markdown):
+    """Send text and source evidence to GitHub's readable file view."""
+    pattern = re.compile(r'(?<=\]\()' + re.escape(BASE_URL + 'evidence/')
+                         + r'([^)]*\.(?:c|diff|js|json|md|tsv|txt))(?=\))')
+    return pattern.sub(lambda match: f'{REPO_URL}/blob/main/{match.group(1)}', markdown)
 
 index = json.loads((EVIDENCE / 'CVE-4.0/index.json').read_text())
 screenshots = json.loads((EVIDENCE / 'screenshots/selection-manifest.json').read_text())
@@ -36,7 +43,7 @@ for item in index:
              + 'draft: false\ncomments: false\n---\n\n')
     target = CONTENT / version / finding / 'index.md'
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(front + f'[← All findings]({BASE_URL}) · [Repository]({REPO_URL})\n\n' + body)
+    target.write_text(github_document_links(front + f'[← All findings]({BASE_URL}) · [Repository]({REPO_URL})\n\n' + body))
 
 by_finding = defaultdict(dict)
 for item in index:
@@ -63,13 +70,23 @@ date: 2026-11-08T12:00:00Z
 draft: false
 ---
 
-This is the companion to my [initial security report](/writing/anpviz-camera-security/) and [remediation review](/writing/anpviz-remediation-review/). The [complete evidence repository](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026) contains the C-like Ghidra exports, 146 labeled source captures, 68 versioned finding dossiers, manifests and supporting excerpts. The same files are available below as [raw site assets](/anpviz-security-vuln-2026/evidence/README.md). This page is served at both **matthewd.xyz** and **matthewd.org**.
+This is the companion to my [initial security report](/writing/anpviz-camera-security/) and [remediation review](/writing/anpviz-remediation-review/). The [complete evidence repository](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026) contains the C-like Ghidra exports, 146 labeled source captures, 68 versioned finding dossiers, manifests and supporting excerpts. The evidence documents and source exports below open in GitHub's file view; the screenshots remain on this site. This page is served at both **matthewd.xyz** and **matthewd.org**.
 
 ## Scope and disclosure
 
 The old V3.5.2.1 image came from a read-only capture of my own IPC-D240W-S (MCA40E). Anpviz's supplied V3.6.3.1 image is for **MCA50E**; Anpviz acknowledged that error and told me not to flash it. I did not run the new image. Its findings are static and need confirmation on a correct MCA40E build. I reported the work privately beginning 17 October 2026 and coordinated with CERT/CC (VRF #26-10-FZTVG) and CISA (case #116607). The [repository README](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/README.md) gives the full CVD timeline and evidence limits.
 
 The F and N labels are research IDs, **not assigned CVE identifiers**. CWE mappings are proposed. Eight conditional scenarios have provisional CVSS v4.0 scores; unscored rows lack a defensible numeric assessment or are inapplicable. Anpviz's model-scope review and response are ongoing. No vendor firmware binary, calculated credential, device identifier, or operational exploit packet is hosted here.
+
+## Earlier public disclosures
+
+These reports show that related camera products and firmware families had published authentication, credential, debug-access and update concerns before this investigation. They concern different models or firmware branches; their CVEs are **not automatically applicable** to my IPC-D240W-S or Anpviz's supplied MCA50E image. The [comparison and source notes](/anpviz-security-vuln-2026/evidence/PRIOR-DISCLOSURES.md) explain the limits.
+
+- [Bishop Fox's 2018 SV3C L-Series advisory](https://www.bishopfox.com/news/2018/10/sv3c-l-series-hd-camera-multiple-vulnerabilities/) ([current advisory](https://bishopfox.com/blog/sv3c-l-series-hd-camera-advisory); [NVD CVE-2018-12666](https://nvd.nist.gov/vuln/detail/cve-2018-12666)) documented ten issues and said no fix had been released at publication.
+- [Willgues's 2024 Anpviz report](https://willgu.es/pages/anpviz-ip-camera-vuln.html) documented CVE-2024-35341 through CVE-2024-35344 and an account of repeated requests for a patch timeline without a substantive vendor response.
+- [andylee77's 2026 Anjvision disclosure repository](https://github.com/andylee77/anjvision-cve-2026) lists ten proposed issues in a different firmware family, including debug access and unsigned updates, and records contact with Anjvision and CERT/CC. Its README marks CVE IDs pending.
+
+I published a [separate account of my disclosure decision](/writing/anpviz-disclosure-decision/) and the wrong-board firmware Anpviz sent for verification.
 
 ## Finding dossiers
 
@@ -88,5 +105,5 @@ Each page explains the old or new code, assessment limits, proposed CWE and CVSS
 ### Supporting files
 
 ''' + support_links + '\n'
-(CONTENT / '_index.md').write_text(landing)
+(CONTENT / '_index.md').write_text(github_document_links(landing))
 print(f'Generated {len(index)} finding pages and landing index')

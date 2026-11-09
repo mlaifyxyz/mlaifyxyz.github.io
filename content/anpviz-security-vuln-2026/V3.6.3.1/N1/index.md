@@ -52,24 +52,24 @@ The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompil
 
 ## Case references
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
 - [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
 - [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
 - CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
 
 ## Source exports
 
-- [NEW-http_FirmwareUpgrade_a-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_a-new.annot.c)
-- [NEW-http_FirmwareUpgrade_a-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_a-new.c)
-- [NEW-http_FirmwareUpgrade_b-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_b-new.annot.c)
-- [NEW-http_FirmwareUpgrade_b-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_b-new.c)
-- [NEW-onvif_StartFirmwareUpgrade-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-onvif_StartFirmwareUpgrade-new.annot.c)
-- [NEW-onvif_StartFirmwareUpgrade-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-onvif_StartFirmwareUpgrade-new.c)
-- [NEW-onvif_StartSystemRestore-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-onvif_StartSystemRestore-new.annot.c)
-- [NEW-onvif_StartSystemRestore-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/NEW-onvif_StartSystemRestore-new.c)
-- [ws_1facc.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/ws_1facc.annot.c)
-- [ws_26dbc.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/ws_26dbc.annot.c)
-- [ws_26ec4.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/ws_26ec4.annot.c)
-- [ws_52c94_struct_init.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/ws_52c94_struct_init.annot.c)
-- [ws_52d0c_authflag_init.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/ws_52d0c_authflag_init.annot.c)
-- [ws_6bd78.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/N1/ws_6bd78.annot.c)
+- [NEW-http_FirmwareUpgrade_a-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_a-new.annot.c)
+- [NEW-http_FirmwareUpgrade_a-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_a-new.c)
+- [NEW-http_FirmwareUpgrade_b-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_b-new.annot.c)
+- [NEW-http_FirmwareUpgrade_b-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-http_FirmwareUpgrade_b-new.c)
+- [NEW-onvif_StartFirmwareUpgrade-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-onvif_StartFirmwareUpgrade-new.annot.c)
+- [NEW-onvif_StartFirmwareUpgrade-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-onvif_StartFirmwareUpgrade-new.c)
+- [NEW-onvif_StartSystemRestore-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-onvif_StartSystemRestore-new.annot.c)
+- [NEW-onvif_StartSystemRestore-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/NEW-onvif_StartSystemRestore-new.c)
+- [ws_1facc.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/ws_1facc.annot.c)
+- [ws_26dbc.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/ws_26dbc.annot.c)
+- [ws_26ec4.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/ws_26ec4.annot.c)
+- [ws_52c94_struct_init.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/ws_52c94_struct_init.annot.c)
+- [ws_52d0c_authflag_init.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/ws_52d0c_authflag_init.annot.c)
+- [ws_6bd78.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/N1/ws_6bd78.annot.c)
