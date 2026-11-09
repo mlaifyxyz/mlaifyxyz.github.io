@@ -53,24 +53,24 @@ The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompil
 
 ## Case references
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
 - [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
 - [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
 - CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
 
 ## Source exports
 
-- [F16-GetSnapshotUri-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetSnapshotUri-new.annot.c)
-- [F16-GetSnapshotUri-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetSnapshotUri-new.c)
-- [F16-GetStreamUri-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri-new.annot.c)
-- [F16-GetStreamUri-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri-new.c)
-- [F16-GetStreamUri_soap-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri_soap-new.annot.c)
-- [F16-GetStreamUri_soap-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-GetStreamUri_soap-new.c)
-- [F16-snap_5d010-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-snap_5d010-new.annot.c)
-- [F16-snap_5d010-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-snap_5d010-new.c)
-- [F16-stream_5cdb8-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-stream_5cdb8-new.annot.c)
-- [F16-stream_5cdb8-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-stream_5cdb8-new.c)
-- [F16-uri_8905c-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_8905c-new.annot.c)
-- [F16-uri_8905c-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_8905c-new.c)
-- [F16-uri_creds_helper-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_creds_helper-new.c)
-- [F16-uri_host_helper-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F16/F16-uri_host_helper-new.c)
+- [F16-GetSnapshotUri-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-GetSnapshotUri-new.annot.c)
+- [F16-GetSnapshotUri-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-GetSnapshotUri-new.c)
+- [F16-GetStreamUri-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-GetStreamUri-new.annot.c)
+- [F16-GetStreamUri-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-GetStreamUri-new.c)
+- [F16-GetStreamUri_soap-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-GetStreamUri_soap-new.annot.c)
+- [F16-GetStreamUri_soap-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-GetStreamUri_soap-new.c)
+- [F16-snap_5d010-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-snap_5d010-new.annot.c)
+- [F16-snap_5d010-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-snap_5d010-new.c)
+- [F16-stream_5cdb8-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-stream_5cdb8-new.annot.c)
+- [F16-stream_5cdb8-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-stream_5cdb8-new.c)
+- [F16-uri_8905c-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-uri_8905c-new.annot.c)
+- [F16-uri_8905c-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-uri_8905c-new.c)
+- [F16-uri_creds_helper-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-uri_creds_helper-new.c)
+- [F16-uri_host_helper-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F16/F16-uri_host_helper-new.c)

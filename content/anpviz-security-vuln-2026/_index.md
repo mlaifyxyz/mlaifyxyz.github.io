@@ -7,7 +7,7 @@ date: 2026-11-08T12:00:00Z
 draft: false
 ---
 
-This is the companion to my [initial security report](/writing/anpviz-camera-security/) and [remediation review](/writing/anpviz-remediation-review/). The [complete evidence repository](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026) contains the C-like Ghidra exports, 146 labeled source captures, 68 versioned finding dossiers, manifests and supporting excerpts. The same files are available below as [raw site assets](/anpviz-security-vuln-2026/evidence/README.md). This page is served at both **matthewd.xyz** and **matthewd.org**.
+This is the companion to my [initial security report](/writing/anpviz-camera-security/) and [remediation review](/writing/anpviz-remediation-review/). The [complete evidence repository](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026) contains the C-like Ghidra exports, 146 labeled source captures, 68 versioned finding dossiers, manifests and supporting excerpts. The evidence documents and source exports below open in GitHub's file view; the screenshots remain on this site. This page is served at both **matthewd.xyz** and **matthewd.org**.
 
 ## Scope and disclosure
 
@@ -17,7 +17,7 @@ The F and N labels are research IDs, **not assigned CVE identifiers**. CWE mappi
 
 ## Earlier public disclosures
 
-These reports show that related camera products and firmware families had published authentication, credential, debug-access and update concerns before this investigation. They concern different models or firmware branches; their CVEs are **not automatically applicable** to my IPC-D240W-S or Anpviz's supplied MCA50E image. The [comparison and source notes](/anpviz-security-vuln-2026/evidence/PRIOR-DISCLOSURES.md) explain the limits.
+These reports show that related camera products and firmware families had published authentication, credential, debug-access and update concerns before this investigation. They concern different models or firmware branches; their CVEs are **not automatically applicable** to my IPC-D240W-S or Anpviz's supplied MCA50E image. The [comparison and source notes](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/PRIOR-DISCLOSURES.md) explain the limits.
 
 - [Bishop Fox's 2018 SV3C L-Series advisory](https://www.bishopfox.com/news/2018/10/sv3c-l-series-hd-camera-multiple-vulnerabilities/) ([current advisory](https://bishopfox.com/blog/sv3c-l-series-hd-camera-advisory); [NVD CVE-2018-12666](https://nvd.nist.gov/vuln/detail/cve-2018-12666)) documented ten issues and said no fix had been released at publication.
 - [Willgues's 2024 Anpviz report](https://willgu.es/pages/anpviz-ip-camera-vuln.html) documented CVE-2024-35341 through CVE-2024-35344 and an account of repeated requests for a patch timeline without a substantive vendor response.
@@ -68,26 +68,26 @@ Each page explains the old or new code, assessment limits, proposed CWE and CVSS
 
 ## Browse the raw evidence
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
-- [CVE candidate and CVSS v4.0 README](/anpviz-security-vuln-2026/evidence/CVE-4.0/README.md)
-- [Screenshot manifest](/anpviz-security-vuln-2026/evidence/screenshots/selection-manifest.json)
-- [Export hash manifest](/anpviz-security-vuln-2026/evidence/MANIFEST.tsv)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
+- [CVE candidate and CVSS v4.0 README](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/CVE-4.0/README.md)
+- [Screenshot manifest](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/screenshots/selection-manifest.json)
+- [Export hash manifest](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/MANIFEST.tsv)
 - [Repository on GitHub](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026)
 
 ### Supporting files
 
-- [CheckA-direct-board-calls.tsv](/anpviz-security-vuln-2026/evidence/supporting-evidence/CheckA-direct-board-calls.tsv)
-- [CheckA-libtools-direct-callers-new.tsv](/anpviz-security-vuln-2026/evidence/supporting-evidence/CheckA-libtools-direct-callers-new.tsv)
-- [CheckA-libtools-direct-callers-old.tsv](/anpviz-security-vuln-2026/evidence/supporting-evidence/CheckA-libtools-direct-callers-old.tsv)
-- [F10-index.js-admin-reset-new.txt](/anpviz-security-vuln-2026/evidence/supporting-evidence/F10-index.js-admin-reset-new.txt)
-- [F16-web_main_onvif_auth_global-new.disasm.txt](/anpviz-security-vuln-2026/evidence/supporting-evidence/F16-web_main_onvif_auth_global-new.disasm.txt)
-- [F20-serial_extract-callers-new.txt](/anpviz-security-vuln-2026/evidence/supporting-evidence/F20-serial_extract-callers-new.txt)
-- [F23-SetVersion-new.disasm.txt](/anpviz-security-vuln-2026/evidence/supporting-evidence/F23-SetVersion-new.disasm.txt)
-- [F7-F8-F10-userManageConfig.js.diff](/anpviz-security-vuln-2026/evidence/supporting-evidence/F7-F8-F10-userManageConfig.js.diff)
-- [S0-config.default-mca40e-old_vs_mca50e-new.diff](/anpviz-security-vuln-2026/evidence/supporting-evidence/S0-config.default-mca40e-old_vs_mca50e-new.diff)
-- [endpoints-urls-new.tsv](/anpviz-security-vuln-2026/evidence/supporting-evidence/endpoints-urls-new.tsv)
-- [endpoints-urls-old.tsv](/anpviz-security-vuln-2026/evidence/supporting-evidence/endpoints-urls-old.tsv)
-- [hardening-old-vs-new.txt](/anpviz-security-vuln-2026/evidence/supporting-evidence/hardening-old-vs-new.txt)
-- [inventory-diff.txt](/anpviz-security-vuln-2026/evidence/supporting-evidence/inventory-diff.txt)
-- [web/userManageConfig-new.js](/anpviz-security-vuln-2026/evidence/supporting-evidence/web/userManageConfig-new.js)
-- [web/userManageConfig-old.js](/anpviz-security-vuln-2026/evidence/supporting-evidence/web/userManageConfig-old.js)
+- [CheckA-direct-board-calls.tsv](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/CheckA-direct-board-calls.tsv)
+- [CheckA-libtools-direct-callers-new.tsv](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/CheckA-libtools-direct-callers-new.tsv)
+- [CheckA-libtools-direct-callers-old.tsv](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/CheckA-libtools-direct-callers-old.tsv)
+- [F10-index.js-admin-reset-new.txt](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/F10-index.js-admin-reset-new.txt)
+- [F16-web_main_onvif_auth_global-new.disasm.txt](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/F16-web_main_onvif_auth_global-new.disasm.txt)
+- [F20-serial_extract-callers-new.txt](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/F20-serial_extract-callers-new.txt)
+- [F23-SetVersion-new.disasm.txt](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/F23-SetVersion-new.disasm.txt)
+- [F7-F8-F10-userManageConfig.js.diff](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/F7-F8-F10-userManageConfig.js.diff)
+- [S0-config.default-mca40e-old_vs_mca50e-new.diff](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/S0-config.default-mca40e-old_vs_mca50e-new.diff)
+- [endpoints-urls-new.tsv](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/endpoints-urls-new.tsv)
+- [endpoints-urls-old.tsv](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/endpoints-urls-old.tsv)
+- [hardening-old-vs-new.txt](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/hardening-old-vs-new.txt)
+- [inventory-diff.txt](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/inventory-diff.txt)
+- [web/userManageConfig-new.js](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/web/userManageConfig-new.js)
+- [web/userManageConfig-old.js](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/supporting-evidence/web/userManageConfig-old.js)

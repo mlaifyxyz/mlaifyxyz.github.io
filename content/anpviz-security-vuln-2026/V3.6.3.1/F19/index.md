@@ -47,17 +47,17 @@ The PNGs are rendered, line-numbered excerpts of existing Ghidra C-like decompil
 
 ## Case references
 
-- [Evidence index](/anpviz-security-vuln-2026/evidence/EVIDENCE-INDEX.md)
+- [Evidence index](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/EVIDENCE-INDEX.md)
 - [Initial public report](https://matthewd.xyz/writing/anpviz-camera-security/)
 - [Remediation review](https://matthewd.xyz/writing/anpviz-remediation-review/)
 - CERT/CC VRF #26-10-FZTVG; CISA Case #116607.
 
 ## Source exports
 
-- [F19-XMLGET_DeviceInfo-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/F19-XMLGET_DeviceInfo-new.annot.c)
-- [F19-p2pid_apply_broadcast-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/F19-p2pid_apply_broadcast-new.annot.c)
-- [F19-p2pid_setup-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/F19-p2pid_setup-new.c)
-- [F19-root_password_setter-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/F19-root_password_setter-new.c)
-- [F19-runtime_root_password-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/F19-runtime_root_password-new.c)
-- [NEW-libtools-sn_password-new.annot.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/NEW-libtools-sn_password-new.annot.c)
-- [NEW-libtools-sn_password-new.c](/anpviz-security-vuln-2026/evidence/V3.6.3.1/F19/NEW-libtools-sn_password-new.c)
+- [F19-XMLGET_DeviceInfo-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/F19-XMLGET_DeviceInfo-new.annot.c)
+- [F19-p2pid_apply_broadcast-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/F19-p2pid_apply_broadcast-new.annot.c)
+- [F19-p2pid_setup-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/F19-p2pid_setup-new.c)
+- [F19-root_password_setter-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/F19-root_password_setter-new.c)
+- [F19-runtime_root_password-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/F19-runtime_root_password-new.c)
+- [NEW-libtools-sn_password-new.annot.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/NEW-libtools-sn_password-new.annot.c)
+- [NEW-libtools-sn_password-new.c](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/V3.6.3.1/F19/NEW-libtools-sn_password-new.c)
