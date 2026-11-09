@@ -11,6 +11,8 @@ comments: false
 
 **Research status, 5 November 2026 UTC.** I examined stock firmware for an Anpviz IPC-D240W-S after a password problem made my camera appear inaccessible. The tested unit ran V3.5.2.1 on SigmaStar Ifado hardware. I privately reported the findings to Anpviz beginning 17 October and submitted them to CISA/CERT/CC on 19 October (CISA case #116607; CERT/CC VRF #26-10-FZTVG). The disclosure date is under discussion; no coordinator-approved date or vendor fix is established in the records I have reviewed.
 
+**9 November follow-up:** Anpviz has since set out its [stated remediation plan](/writing/anpviz-vendor-response/). I have completed my independent investigation. The dated findings below remain the record of what I observed and analyzed.
+
 My two cameras now run replacement firmware. The live tests below were performed earlier, on my own stock-firmware unit while it was isolated from the internet. This page does not depict a new test on the replacement firmware.
 
 ![Evidence map: observed live behavior, static firmware findings, and unresolved impact](/images/anpviz-evidence-map.svg)

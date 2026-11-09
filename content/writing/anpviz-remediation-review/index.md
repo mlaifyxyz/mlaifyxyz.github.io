@@ -11,6 +11,8 @@ comments: false
 
 **Research status, 7 November 2026 UTC.** This follows my [initial IPC-D240W-S report](/writing/anpviz-camera-security/). Anpviz sent me an assessment and a V3.6.3.1 firmware image on 6 November, describing the image as a remediation build for my V3.5.2.1 camera. I compared it statically with a read-only capture from my own camera and earlier Anpviz releases. **I have not installed or run the new image.** Both of my cameras run my own firmware, so I cannot claim that any new build has passed a live regression test on an IPC-D240W-S.
 
+**9 November follow-up:** I have recorded [Anpviz's stated remediations and my decision to end this independent work](/writing/anpviz-vendor-response/). This page remains my separate static review of the image it supplied.
+
 My review found four of the 24 original findings fixed as described, 11 insufficiently addressed, seven unchanged, and two that cannot be decided from these images. These are **research classifications for the supplied image**, not 24 demonstrated live exploits. I also found possible new exposures that need testing and a response from Anpviz. The most immediate issue was simpler: **Anpviz sent firmware for the wrong board.** On 7 November, its R&D lead acknowledged that error, told me not to flash it, and promised the correct build through CERT/CC VINCE. That response is a material improvement in the coordination record, but it does not establish that the security issues are fixed on my camera.
 
 ## The image was for an MCA50E, not my MCA40E
