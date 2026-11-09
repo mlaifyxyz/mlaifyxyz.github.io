@@ -67,7 +67,7 @@ This is the companion to my [initial security report](/writing/anpviz-camera-sec
 
 ## Scope and disclosure
 
-The old V3.5.2.1 image came from a read-only capture of my own IPC-D240W-S (MCA40E). Anpviz's supplied V3.6.3.1 image is for **MCA50E**; Anpviz acknowledged that error and told me not to flash it. I did not run the new image. Its findings are static and need confirmation on a correct MCA40E build. I reported the work privately beginning 17 October 2026 and coordinated with CERT/CC (VRF #26-10-FZTVG) and CISA (case #116607). The [repository README](/anpviz-security-vuln-2026/evidence/README.md) gives the full CVD timeline and evidence limits.
+The old V3.5.2.1 image came from a read-only capture of my own IPC-D240W-S (MCA40E). Anpviz's supplied V3.6.3.1 image is for **MCA50E**; Anpviz acknowledged that error and told me not to flash it. I did not run the new image. Its findings are static and need confirmation on a correct MCA40E build. I reported the work privately beginning 17 October 2026 and coordinated with CERT/CC (VRF #26-10-FZTVG) and CISA (case #116607). The [repository README](https://github.com/mlaifyxyz/anpviz_sec_vuln_10-2026/blob/main/README.md) gives the full CVD timeline and evidence limits.
 
 The F and N labels are research IDs, **not assigned CVE identifiers**. CWE mappings are proposed. Eight conditional scenarios have provisional CVSS v4.0 scores; unscored rows lack a defensible numeric assessment or are inapplicable. Anpviz's model-scope review and response are ongoing. No vendor firmware binary, calculated credential, device identifier, or operational exploit packet is hosted here.
 
