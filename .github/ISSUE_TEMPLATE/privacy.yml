@@ -1,0 +1,48 @@
+name: Privacy request
+description: Ask about, access, correct, or delete data that matthewd.xyz may hold about you. This form is public.
+labels: ["privacy"]
+title: "[Privacy]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This form is public.** Do not post your name, email address, IP address, location, or any other personal information. Your GitHub account identifies you, and replies stay in this issue.
+
+        This site has no user accounts and keeps only limited technical data; see the [privacy policy](https://matthewd.xyz/privacy-policy/). I may lock or hide this issue once it is handled.
+  - type: dropdown
+    id: request
+    attributes:
+      label: Request type
+      options:
+        - Ask whether and what data is processed about me
+        - Access a copy of my data
+        - Correct my data
+        - Delete my data (for example, a comment)
+        - Opt out of processing
+        - Question about the privacy policy
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does this apply?
+      options:
+        - matthewd.xyz pages
+        - Comments on matthewd.xyz (GitHub Discussions via Giscus)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the request without personal information. Link to the page or comment it concerns, if any.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included personal information in this issue.
+          required: true
