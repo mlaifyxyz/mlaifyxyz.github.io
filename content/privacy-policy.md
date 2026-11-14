@@ -154,7 +154,7 @@ This website processes only limited technical data necessary for secure operatio
 
 You may contact the site operator about privacy-related requests:
 
-- **GitHub:** open an issue in [the site's repository](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues) only when the request contains no private information.
+- **GitHub:** use the [privacy request form](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues/new?template=privacy.yml). The form is public, so do not include personal information; your GitHub account identifies you, and replies stay in the issue.
 
 Because this site does not maintain user accounts or personal profiles, the ability to identify or act on specific data may be limited.
 
