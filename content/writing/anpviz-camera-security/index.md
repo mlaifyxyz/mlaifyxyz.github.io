@@ -112,7 +112,11 @@ I attempted a coordinated disclosure: I reported the findings privately, filed w
 
 Because the findings include confirmed root access under a documented precondition, weak authentication defaults, and serious memory-safety concerns, I am seeking urgent coordination for earlier public disclosure. I am also concerned that advance notice of the weaknesses could be misused against buyers' devices by a party with privileged access to the firmware or cloud update channel, including the vendor. **I have no evidence that Anpviz has exploited customers' devices or intends to do so.** This is a risk I want the coordinator to assess, not an accusation or a finding of misconduct. The affected-product list and installed-device count remain unverified.
 
-My website's vulnerability reporting policy asks researchers who find problems **in my assets** to give me at least 90 days. This research concerns another vendor's product. My earlier 90-day proposal to Anpviz was a proposed coordination period, and I will explain any change to the public date with the coordinator's position and the evidence available at publication time.
+The website policy in effect when I made that proposal asked researchers who found problems **in
+my assets** to give me at least 90 days. This research concerns another vendor's product. My
+earlier 90-day proposal to Anpviz was a proposed coordination period, and I will explain any
+change to the public date with the coordinator's position and the evidence available at
+publication time.
 
 I will update this page with confirmed vendor, coordinator, and product-scope information as it becomes available.
 
