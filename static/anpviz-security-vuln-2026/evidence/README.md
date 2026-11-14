@@ -5,7 +5,7 @@
 This advisory is also available as a [standalone document](ADVISORY-2026-11-09.md) and a [readable blog post](https://matthewd.xyz/writing/anpviz-vendor-status-advisory/).
 
 **Advisory date:** 2026-11-09 (UTC)
-**Researcher:** Matthew Davis, M&L AI LLC (security@mlaify.io)
+**Researcher:** Matthew Davis, M&L AI LLC
 **Coordination:** CERT/CC VRF #26-10-FZTVG; CISA Case #116607
 **Full technical report:** v1.13, findings F1–F24 (write-up: https://matthewd.xyz/writing/anpviz-camera-security/)
 **Tested product:** Anpviz IPC-D240W-S (ONVIF model `A40E_IR_c0`), firmware V3.5.2.1 (build 2026-06-08)
@@ -127,4 +127,4 @@ The original F19 report emphasized a shared root hash. Later analysis found runt
 
 ## Coordination and reuse
 
-For technical corrections, affected-model information, or coordination, use CERT/CC VRF #26-10-FZTVG or [security@mlaify.io](mailto:security@mlaify.io). Do not send test traffic to devices you do not own or administer. Third-party firmware and decompilation excerpts are included as research evidence; this repository does not grant a license to Anpviz's firmware or other third-party material. Original analysis text and generated evidence presentation are © 2026 Matthew Davis / M&L AI LLC.
+For technical corrections, open a GitHub issue. For affected-model information or coordination, use CERT/CC VRF #26-10-FZTVG. Do not send test traffic to devices you do not own or administer. Third-party firmware and decompilation excerpts are included as research evidence; this repository does not grant a license to Anpviz's firmware or other third-party material. Original analysis text and generated evidence presentation are © 2026 Matthew Davis / M&L AI LLC.

@@ -22,7 +22,6 @@ note() {
 [ -f public/404.html ] || note "public/404.html missing — not_found_handling: 404-page has nothing to serve"
 [ -d public/pagefind ] || note "public/pagefind missing — search index not built"
 [ -f public/.well-known/security.txt ] || note "public/.well-known/security.txt missing"
-[ -f public/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc ] || note "security PGP key missing — security.txt Encryption: would 404"
 [ -f public/humans.txt ] || note "public/humans.txt missing"
 [ -f public/privacy.json ] || note "public/privacy.json missing"
 for page in security privacy-policy code-of-conduct contributing license; do

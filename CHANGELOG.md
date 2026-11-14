@@ -29,8 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed: the theme toggle stored `mlaify-theme` while the early script read `matthewd-theme`, so a chosen
   theme could flash wrong on reload. Both now use `matthewd-theme`.
 - New pages: `/contributing/`, `/code-of-conduct/`, `/license/`. Footer links all policy pages.
-- Contacts are security@mlaify.io and privacy@mlaify.io (no matthewd.xyz or matthewd.org addresses). The security@mlaify.io
-  PGP key is served at `/publickey.security.mlaify.io-38642d….asc`; `matthewdxyz.asc` removed.
+- Legacy published contact details and the site-served OpenPGP key were removed in favor of
+  GitHub Private Vulnerability Reporting.
 - `/security/`, `/privacy-policy/` (now "Privacy Policy and Terms of Use"; the code of conduct moved to its
   own page), `humans.txt`, `privacy.json`, `CONTRIBUTING.md`, `CONTENT_LICENSE.md` and `LICENSE` updated for
   this site. `check-build.sh` also checks the key, humans.txt, privacy.json and the policy pages.

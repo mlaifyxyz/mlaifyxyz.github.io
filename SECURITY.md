@@ -40,13 +40,19 @@ In participating in our vulnerability disclosure program in good faith, we ask t
 - You should only interact with test accounts you own or with explicit permission from the account holder; and
 - Do not engage in extortion.
 
-## Official Channels
+## Choosing the Right Channel
 
-Please report security issues by email to [security@mlaify.io](mailto:security@mlaify.io), providing all relevant information. The more details you provide, the easier it will be for us to triage and fix the issue. Do not report vulnerabilities in public issues, pull requests or comments.
+Use a public GitHub issue for ordinary site bugs, broken links, content corrections, feature requests, and documentation problems.
 
-If practical, encrypt your report with the security@mlaify.io PGP key: [publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc](https://matthewd.xyz/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc) (also in this repository under static/), fingerprint 3864 2D27 5F82 0A02 6F3B FC5E 7E44 D7D0 5BAF D4DF.
+Use private vulnerability reporting only for a credible vulnerability in this website or repository. Automated scanner output without validation and a demonstrated site-specific impact is not sufficient by itself.
 
-Machine-readable contact details: [https://matthewd.xyz/.well-known/security.txt](https://matthewd.xyz/.well-known/security.txt).
+This is a coordinated vulnerability disclosure program, not a bug bounty. I do not offer or promise payment, rewards, or swag for reports.
+
+## Official Channel
+
+Report vulnerabilities through the repository's **Security** tab using **Report a vulnerability**. Do not put vulnerability details in a public issue, pull request, discussion, or comment.
+
+Machine-readable reporting details: [https://matthewd.xyz/.well-known/security.txt](https://matthewd.xyz/.well-known/security.txt).
 
 ## Safe Harbor
 

@@ -1,7 +1,5 @@
 /* TEAM */
 Owner / Author: Matt D.
-Contact: privacy@mlaify.io
-Security: security@mlaify.io
 GitHub: https://github.com/mlaifyxyz/mlaifyxyz.github.io
 Projects: https://mlaify.io
 Location: United States
