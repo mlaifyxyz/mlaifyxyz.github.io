@@ -898,7 +898,7 @@ Specific edits to expect:
 - "We welcome contributions" → "I welcome contributions"
 - "mlaify projects accept" → "These projects accept" or "I accept"
 - "Our PR conventions" → "PR conventions" (drop possessive) or "My PR conventions"
-- "Reach out to us at" → "Reach out to me at" — with the contact email being matthewd@matthewd.xyz per the user's existing setup
+- "Reach out to us at" → "Reach out to me at"
 
 Update any contact email/method to matthewd's. The mlaify version may have a generic org email; replace.
 
@@ -924,7 +924,7 @@ git commit -m "Port /contribute/ with first-person voice rewrite
 
 Recasts the contribution guide from mlaify's plural voice (\"We
 welcome\", \"our PR conventions\") to first-person. Contact email
-updated to matthewd@matthewd.xyz.
+removed.
 
 Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
 ```
@@ -1267,7 +1267,7 @@ Likely the latter — Phase 1 just merged to main and hasn't been tagged with a 
 ### Added
 - All mlaify content imported with first-person voice edits: Aegis (8 pages), AttackMap (7 pages), OmekaRapper, OpenSift, OpenContractRx.
 - `/principles/` page (formerly mlaify's `/build-principles/`), recast in first-person.
-- `/contribute/` page recast in first-person with matthewd@matthewd.xyz as the contact.
+- `/contribute/` page recast in first-person.
 - `/projects/` hub page listing all 5 projects with status badges, sorted by weight.
 - Projects section on the homepage (top 2 as cards, smaller 3 as pill links).
 - `[products]` table in `params.toml` configuring all 5 projects (name, tagline, status, accent, URL, repo URL).
@@ -1441,7 +1441,7 @@ Imports all mlaify content under matthewd.xyz with first-person voice edits, ren
 - AttackMap (7 pages) at `/attackmap/*` — analyzers doc had the heaviest voice work.
 - OmekaRapper, OpenSift, OpenContractRx at top-level `/<name>/`.
 - `/principles/` (formerly `/build-principles/` on mlaify) — substantial first-person rewrite.
-- `/contribute/` — full voice rewrite, matthewd@matthewd.xyz as contact.
+- `/contribute/` — full voice rewrite.
 - `/about/` — new body merging the educational/Fedora bio with mlaify umbrella copy, photography retirement noted honestly.
 - `/projects/` hub iterating `site.Params.products`.
 - Homepage projects section: Aegis + AttackMap as cards, smaller 3 as pills.

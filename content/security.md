@@ -13,15 +13,21 @@ comments: false
 
 This website welcomes feedback from security researchers and the general public. If you believe you have found a vulnerability, privacy issue, exposed data, or other security problem in matthewd.xyz, I want to hear from you.
 
-### Official channels
+### Choose the right channel
 
-Please report security issues by email, with as much detail as you can. The more information you include, the easier it is to triage and fix the issue.
+Use a public GitHub issue for ordinary site bugs, broken links, content corrections, feature requests, and documentation problems.
 
-- **Email:** [security@mlaify.io](mailto:security@mlaify.io)
-- **PGP key:** [security@mlaify.io PGP key](/publickey.security.mlaify.io-38642d275f820a026f3bfc5e7e44d7d05bafd4df.asc) (fingerprint `3864 2D27 5F82 0A02 6F3B FC5E 7E44 D7D0 5BAF D4DF`)
-- **Machine-readable:** [/.well-known/security.txt](/.well-known/security.txt)
+For a credible vulnerability in this website or repository:
 
-Please don't report vulnerabilities in public GitHub issues or comments.
+1. Open [github.com/mlaifyxyz/mlaifyxyz.github.io](https://github.com/mlaifyxyz/mlaifyxyz.github.io).
+2. Select the **Security** tab.
+3. Select **Report a vulnerability**.
+
+Do not put vulnerability details in public GitHub issues, pull requests, discussions, or comments. Automated scanner output without validation and a demonstrated site-specific impact is not sufficient by itself.
+
+This is a coordinated vulnerability disclosure program, not a bug bounty. Payment, rewards, and swag are not offered or promised.
+
+Machine-readable reporting details are at [/.well-known/security.txt](/.well-known/security.txt).
 
 ### Systems in scope
 

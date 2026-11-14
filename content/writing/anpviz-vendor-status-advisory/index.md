@@ -10,7 +10,7 @@ comments: false
 ---
 
 **Advisory date:** 2026-11-09 (UTC)
-**Researcher:** Matthew Davis, M&L AI LLC (security@mlaify.io)
+**Researcher:** Matthew Davis, M&L AI LLC
 **Coordination:** CERT/CC VRF #26-10-FZTVG; CISA Case #116607
 **Full technical report:** v1.13, findings F1–F24 (write-up: https://matthewd.xyz/writing/anpviz-camera-security/)
 **Tested product:** Anpviz IPC-D240W-S (ONVIF model `A40E_IR_c0`), firmware V3.5.2.1 (build 2026-06-08)

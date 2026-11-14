@@ -29,11 +29,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed: the theme toggle stored `mlaify-theme` while the early script read `matthewd-theme`, so a chosen
   theme could flash wrong on reload. Both now use `matthewd-theme`.
 - New pages: `/contributing/`, `/code-of-conduct/`, `/license/`. Footer links all policy pages.
-- Contacts are security@mlaify.io and privacy@mlaify.io (no matthewd.xyz or matthewd.org addresses). The security@mlaify.io
-  PGP key is served at `/publickey.security.mlaify.io-38642d….asc`; `matthewdxyz.asc` removed.
+- Legacy published contact details and the site-served OpenPGP key were removed in favor of
+  GitHub Private Vulnerability Reporting.
 - `/security/`, `/privacy-policy/` (now "Privacy Policy and Terms of Use"; the code of conduct moved to its
   own page), `humans.txt`, `privacy.json`, `CONTRIBUTING.md`, `CONTENT_LICENSE.md` and `LICENSE` updated for
-  this site. `check-build.sh` also checks the key, humans.txt, privacy.json and the policy pages.
+  this site. `check-build.sh` also checks humans.txt, privacy.json and the policy pages.
 - All writing moves here from mlaify.io, which 301-redirects `/writing/*` (and the moved images) to
   matthewd.xyz: the Anpviz IPC-D240W-S camera security post and its two evidence graphics are new here;
   posts 1–6 already were (this site keeps their personal bylines, photo credits and Instagram links).
@@ -49,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hugo config split into `config/_default/*.toml` files (hugo, module, markup, params, languages, menus).
 - All mlaify content imported with first-person voice edits: Aegis (8 pages), AttackMap (7 pages), OmekaRapper, OpenSift, OpenContractRx.
 - `/principles/` page (formerly mlaify's `/build-principles/`), recast in first-person.
-- `/contribute/` page recast in first-person with matthewd@matthewd.xyz as the contact.
+- `/contribute/` page recast in first-person.
 - `/projects/` hub page listing all 5 projects with status badges, sorted by weight.
 - Projects section on the homepage (top 2 as cards, smaller 3 as pill links).
 - `[products]` table in `params.toml` configuring all 5 projects (name, tagline, status, accent, URL, repo URL).

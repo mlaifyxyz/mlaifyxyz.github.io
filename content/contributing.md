@@ -15,8 +15,8 @@ Everyone taking part follows the [Code of Conduct](/code-of-conduct/).
 - **Comment on a post.** Each post has comments at the bottom (GitHub Discussions via Giscus).
 - **Report a problem.** Open an issue in [the site's repository](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues/new/choose) using the bug report or feature request template.
 - **Fix it yourself.** Typos and small content fixes can go straight to a pull request.
-- **Report a security issue privately.** Don't open a public issue; follow the [security policy](/security/) and email [security@mlaify.io](mailto:security@mlaify.io).
-- **Privacy questions** go to [privacy@mlaify.io](mailto:privacy@mlaify.io).
+- **Report a security issue privately.** Don't open a public issue; follow the [security policy](/security/) and use the repository's **Security** tab.
+- **Privacy questions.** Open an issue only when the request contains no private information.
 
 Want to work on code? My projects, such as AttackMap and grrclone, live on [mlaify.io](https://mlaify.io/) and have their own contribution guides.
 

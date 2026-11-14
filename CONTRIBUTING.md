@@ -6,12 +6,12 @@ By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Ways to Contribute
 
-- **Report a bug or content issue**: open an issue using the [bug report template](.github/ISSUE_TEMPLATE/bug_report.md).
-- **Suggest an improvement**: open an issue using the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md).
+- **Report a bug or content issue**: open an issue using the [bug report form](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues/new/choose).
+- **Suggest an improvement**: open an issue using the [feature request form](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues/new/choose).
 - **Fix a typo or update content**: open a pull request directly.
 - **Comment on a post**: use the comments at the bottom of each post (GitHub Discussions via Giscus).
-- **Report a security vulnerability**: **do not open a public issue.** Email [security@mlaify.io](mailto:security@mlaify.io) and follow [`SECURITY.md`](SECURITY.md).
-- **Privacy questions or requests**: email [privacy@mlaify.io](mailto:privacy@mlaify.io).
+- **Report a security vulnerability**: **do not open a public issue.** Use the repository's **Security** tab and select **Report a vulnerability**; follow [`SECURITY.md`](SECURITY.md).
+- **Privacy questions or requests**: open an issue only when the request contains no private information.
 
 ## Pull Request Process
 

@@ -183,7 +183,7 @@ Create `/Volumes/Dev/repos/GitHub/mdavistffhrtporg/mdavistffhrtporg.github.io/pa
   "name": "mdavistffhrtporg.github.io",
   "version": "0.3.0",
   "description": "matthewd.xyz — personal site, writing, and projects (Aegis, AttackMap, et al).",
-  "author": "Matt D. <matthewd@matthewd.xyz>",
+  "author": "Matt D.",
   "license": "MIT",
   "repository": {
     "type": "git",

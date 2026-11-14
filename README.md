@@ -48,11 +48,9 @@ changes between the two repos.
 | Licenses | [`LICENSE`](LICENSE) (MIT), [`CONTENT_LICENSE.md`](CONTENT_LICENSE.md) (CC BY-NC-SA 4.0) | `/license/` |
 | humans.txt | — | `/humans.txt` |
 
-Contacts: **security@mlaify.io** (security reports and code of conduct reports;
-PGP key `static/publickey.security.mlaify.io-…asc`, fingerprint
-`3864 2D27 5F82 0A02 6F3B FC5E 7E44 D7D0 5BAF D4DF`) and **privacy@mlaify.io**.
-No matthewd.xyz or matthewd.org addresses are used. The repository files and the site pages carry the
-same text in two places; update both together. `security.txt` expires
+Report vulnerabilities and private code-of-conduct concerns through the repository's
+**Security** tab. The repository files and the site pages carry the same text in two places;
+update both together. `security.txt` expires
 2027-05-09; renew it before then.
 
 ---

@@ -154,8 +154,7 @@ This website processes only limited technical data necessary for secure operatio
 
 You may contact the site operator about privacy-related requests:
 
-- **Email:** [privacy@mlaify.io](mailto:privacy@mlaify.io)
-- **GitHub:** by opening an issue in [the site's repository](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues)
+- **GitHub:** open an issue in [the site's repository](https://github.com/mlaifyxyz/mlaifyxyz.github.io/issues) only when the request contains no private information.
 
 Because this site does not maintain user accounts or personal profiles, the ability to identify or act on specific data may be limited.
 
