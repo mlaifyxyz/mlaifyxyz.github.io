@@ -193,7 +193,7 @@ You agree not to:
 - Abuse interactive features or third-party services
 - Misrepresent authorship or ownership of content
 
-Security research is welcome under the [security policy](/security/).
+Security reports are handled under the [security reporting policy](/security/).
 
 ---
 

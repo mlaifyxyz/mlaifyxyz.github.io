@@ -3,64 +3,49 @@ title: "Security"
 slug: "security"
 url: "/security/"
 kicker: "Policy"
-description: "How to report a vulnerability in matthewd.xyz."
-lastmod: 2026-11-07
+description: "How security reports for my personal projects are handled."
+lastmod: 2026-11-14
 draft: false
 comments: false
 ---
 
-## Reporting a vulnerability
+## Security reporting
 
-This website welcomes feedback from security researchers and the general public. If you believe you have found a vulnerability, privacy issue, exposed data, or other security problem in matthewd.xyz, I want to hear from you.
+My repositories and websites are personal, hobby-maintained projects run by one person. They are
+not a commercial security service, and I do not have a dedicated security or support team.
 
-### Choose the right channel
+The complete and canonical policy is my
+[personal security reporting policy](https://github.com/mlaifyxyz/.github/blob/main/SECURITY.md).
 
-Use a public GitHub issue for ordinary site bugs, broken links, content corrections, feature requests, and documentation problems.
+There is no bug bounty or paid disclosure program. Payment, rewards, sponsorship, employment,
+gifts, and swag are not offered or promised. A report does not create an obligation to respond,
+investigate, remediate, publish an advisory, provide credit, or coordinate disclosure.
 
-For a credible vulnerability in this website or repository:
+Unless a repository explicitly documents otherwise, my development and testing are on macOS.
+Linux support is best effort only where documented, and Windows is unsupported.
+
+### Choose the right GitHub channel
+
+Use a public GitHub issue for ordinary site bugs, broken links, content corrections, feature
+requests, and documentation problems.
+
+For a credible, confidential vulnerability in this website or repository:
 
 1. Open [github.com/mlaifyxyz/mlaifyxyz.github.io](https://github.com/mlaifyxyz/mlaifyxyz.github.io).
 2. Select the **Security** tab.
 3. Select **Report a vulnerability**.
 
-Do not put vulnerability details in public GitHub issues, pull requests, discussions, or comments. Automated scanner output without validation and a demonstrated site-specific impact is not sufficient by itself.
-
-This is a coordinated vulnerability disclosure program, not a bug bounty. Payment, rewards, and swag are not offered or promised.
+Do not put unpatched vulnerability details in a public issue, pull request, discussion, or
+comment. Reports sent by email are not processed. Automated scanner output without manual
+validation and a demonstrated site-specific impact is not sufficient.
 
 Machine-readable reporting details are at [/.well-known/security.txt](/.well-known/security.txt).
 
-### Systems in scope
+### Scope for this website
 
-- **matthewd.xyz** and **matthewd.org**: this site (the same site at two addresses)
-- **Its source repository:** [github.com/mlaifyxyz/mlaifyxyz.github.io](https://github.com/mlaifyxyz/mlaifyxyz.github.io)
+The deployed **matthewd.xyz** and **matthewd.org** site and its
+[source repository](https://github.com/mlaifyxyz/mlaifyxyz.github.io) are in scope under the
+canonical personal policy.
 
-My projects (AttackMap, grrclone and others) are covered by the [mlaify.io security policy](https://mlaify.io/security/).
-
-### What I ask of you
-
-Please give me at least **90 days** from your first report to resolve the issue before any public disclosure.
-
-When taking part in good faith, please:
-
-- Follow the [Vulnerability Disclosure Policy](https://github.com/mlaifyxyz/mlaifyxyz.github.io/blob/main/SECURITY.md) and any other applicable agreements;
-- Report vulnerabilities promptly and avoid violating the privacy of others or disrupting the site;
-- Limit data access to the minimum required for a proof of concept;
-- Stop testing and report immediately if you encounter any user data (PII, PHI, financial data); and
-- Not engage in extortion.
-
-### What you can expect
-
-- A prompt response, and help to understand and validate your report;
-- Updates while the issue is being worked on;
-- Remediation of confirmed vulnerabilities in a timely manner; and
-- Safe Harbor for good-faith research under this policy.
-
-### Safe Harbor
-
-Security research conducted under this policy is considered authorized under applicable anti-hacking and anti-circumvention laws. I will not initiate or support legal action against researchers who act in good faith under this policy.
-
----
-
-The complete policy text is in [SECURITY.md](https://github.com/mlaifyxyz/mlaifyxyz.github.io/blob/main/SECURITY.md). It follows the [disclose.io](https://disclose.io) vulnerability disclosure framework.
-
-Thank you for helping keep this site secure.
+Projects published under `mlaify` are covered by the
+[mlaify organization-wide policy](https://github.com/mlaify/.github/blob/main/SECURITY.md).

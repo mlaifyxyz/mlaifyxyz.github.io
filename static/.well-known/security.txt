@@ -3,7 +3,7 @@
 # Security reporting instructions
 Contact: https://matthewd.xyz/security/
 
-# Link to our vulnerability disclosure policy
+# Link to the security reporting policy summary
 Policy: https://matthewd.xyz/security/
 
 # The canonical locations of this file (the same site is served at both)
