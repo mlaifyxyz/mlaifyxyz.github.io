@@ -1,7 +1,7 @@
 description = "Matt D. — open source contributor and writer."
 tagline = "Open source contributor and writer."
 # Homepage intro (personal site). Edit freely.
-intro = "I'm Matt — a Fedora Magazine contributor and editor, and an open source contributor since 2003. This is where I keep my personal writing: essays, technical notes, and the occasional poem."
+intro = "I'm Matt — a Fedora Magazine contributor and editor, and an open source contributor since 2003. I build AI-driven defensive security software, and I also do offensive software testing and development, vulnerability testing, and red-teaming, in authorized engagements only. This is where I keep my personal writing: essays, technical notes, and the occasional poem."
 
 # Default OG / Twitter image
 ogImage = "images/pic-mdavis-home.svg"
