@@ -11,10 +11,11 @@ comments: false
 
 ## Security reporting
 
-My repositories and websites are worked on by just one person: me. They are not a commercial
-security service, and I do not have a dedicated security or support team. Coordinated
-vulnerability disclosure (CVD) and this vulnerability disclosure policy (VDP) are handled on a
-best-effort basis.
+My repositories and websites are personal projects that I run myself. I do my best to provide
+security and support for all of them, but both are best effort: there is no guaranteed response,
+fix, or timeline. Coordinated vulnerability disclosure (CVD) under this vulnerability disclosure
+policy (VDP) is handled the same way. I am one person, not a large company with dedicated teams
+for security, support, and everything else.
 
 The complete and canonical policy is my
 [personal security reporting policy](https://github.com/mlaifyxyz/.github/blob/main/SECURITY.md).
