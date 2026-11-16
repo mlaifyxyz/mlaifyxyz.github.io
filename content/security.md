@@ -4,15 +4,17 @@ slug: "security"
 url: "/security/"
 kicker: "Policy"
 description: "How security reports for my personal projects are handled."
-lastmod: 2026-11-14
+lastmod: 2026-11-16
 draft: false
 comments: false
 ---
 
 ## Security reporting
 
-My repositories and websites are personal, hobby-maintained projects run by one person. They are
-not a commercial security service, and I do not have a dedicated security or support team.
+My repositories and websites are worked on by just one person: me. They are not a commercial
+security service, and I do not have a dedicated security or support team. Coordinated
+vulnerability disclosure (CVD) and this vulnerability disclosure policy (VDP) are handled on a
+best-effort basis.
 
 The complete and canonical policy is my
 [personal security reporting policy](https://github.com/mlaifyxyz/.github/blob/main/SECURITY.md).
